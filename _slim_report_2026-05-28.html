@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Brief — 2026年5月28日 星期四</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:         #f0f2f5;
+  --surface:    #ffffff;
+  --surface2:   #f8f9fc;
+  --border:     #e8eaed;
+  --border2:    #d1d5db;
+  --text:       #111827;
+  --muted:      #6b7280;
+  --subtle:     #9ca3af;
+  --accent:     #1d4ed8;
+  --accent-bg:  #eff6ff;
+  --green:      #059669;
+  --green-bg:   #f0fdf4;
+  --red:        #dc2626;
+  --red-bg:     #fef2f2;
+  --orange:     #ea580c;
+  --orange-bg:  #fff7ed;
+  --purple:     #7c3aed;
+  --purple-bg:  #f5f3ff;
+
+  --world-c:  #dc2626; --world-bg:  #fef2f2; --world-bd:  #fecaca;
+  --ai-c:     #7c3aed; --ai-bg:     #f5f3ff; --ai-bd:     #ddd6fe;
+  --crypto-c: #d97706; --crypto-bg: #fffbeb; --crypto-bd: #fde68a;
+  --eco-c:    #059669; --eco-bg:    #f0fdf4; --eco-bd:    #a7f3d0;
+  --paper-c:  #0d9488; --paper-bg:  #f0fdfa; --paper-bd:  #99f6e4;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter','Noto Sans SC','Microsoft YaHei',-apple-system,sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── LANG TOGGLE ──────────────────────────────────── */
+.lang-toggle {
+  position: fixed; top: 16px; right: 20px; z-index: 999;
+  display: flex; gap: 2px;
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 8px; padding: 3px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.lang-toggle button {
+  background: transparent; border: none;
+  color: var(--muted); font-size: 12px; font-weight: 600;
+  padding: 4px 14px; border-radius: 6px; cursor: pointer;
+  letter-spacing: .5px; transition: all .15s; font-family: inherit;
+}
+.lang-toggle button.active { background: var(--accent); color: #fff; }
+@media print { .lang-toggle { display: none; } }
+
+/* ── HEADER ───────────────────────────────────────── */
+.header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0 22px;
+}
+.header-inner {
+  max-width: 1080px; margin: 0 auto; padding: 0 32px;
+  display: flex; align-items: flex-end; justify-content: space-between;
+  flex-wrap: wrap; gap: 16px;
+}
+.header-brand {}
+.header-eyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 6px;
+}
+.header-title {
+  font-size: 38px; font-weight: 700; color: var(--text);
+  letter-spacing: -0.5px; line-height: 1.15;
+}
+.header-title .accent { color: var(--accent); }
+.header-date {
+  text-align: right;
+}
+.header-date .date-main {
+  font-size: 17px; font-weight: 600; color: var(--text); display: block;
+}
+.header-date .date-sub {
+  font-size: 15px; color: var(--muted); margin-top: 2px; display: block;
+}
+
+/* ── LAYOUT ───────────────────────────────────────── */
+.container { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+
+/* ── KEY POINTS ───────────────────────────────────── */
+.keypoints {
+  margin: 28px 0 0;
+  background: var(--accent-bg);
+  border: 1px solid #bfdbfe;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  padding: 20px 26px;
+}
+.keypoints-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 12px;
+}
+.keypoints ul { list-style: none; }
+.keypoints li {
+  font-size: 17px; color: var(--text);
+  padding: 5px 0 5px 16px;
+  position: relative;
+  border-bottom: 1px solid #dbeafe;
+}
+.keypoints li:last-child { border-bottom: none; padding-bottom: 0; }
+.keypoints li::before {
+  content: ''; position: absolute; left: 0; top: 13px;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+}
+
+/* ── SECTION ──────────────────────────────────────── */
+.section { margin-top: 40px; }
+.section-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 18px; padding-bottom: 14px;
+  border-bottom: 2px solid var(--border);
+}
+.section-left { display: flex; align-items: center; gap: 10px; }
+.section-icon { font-size: 22px; }
+.section-title { font-size: 26px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+.section-count { font-size: 15px; color: var(--muted); }
+
+/* ── ARTICLE CARD ─────────────────────────────────── */
+.articles-list { display: flex; flex-direction: column; gap: 14px; }
+.article-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 20px 22px;
+  display: flex; gap: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+  page-break-inside: avoid;
+}
+.article-img-wrap {
+  flex: 0 0 168px; height: 112px;
+  border-radius: 8px; overflow: hidden;
+  background: var(--surface2);
+}
+.article-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.article-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.article-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+.badge {
+  display: inline-block; font-size: 11px; font-weight: 600;
+  letter-spacing: .3px; padding: 2px 10px; border-radius: 20px;
+  border: 1px solid;
+}
+.badge-world  { background: var(--world-bg);  color: var(--world-c);  border-color: var(--world-bd); }
+.badge-ai     { background: var(--ai-bg);     color: var(--ai-c);     border-color: var(--ai-bd); }
+.badge-crypto { background: var(--crypto-bg); color: var(--crypto-c); border-color: var(--crypto-bd); }
+.badge-economy{ background: var(--eco-bg);    color: var(--eco-c);    border-color: var(--eco-bd); }
+.badge-paper  { background: var(--paper-bg);  color: var(--paper-c);  border-color: var(--paper-bd); }
+
+/* ── PAPER CARD ───────────────────────────────────────── */
+.paper-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--paper-c);
+  padding: 20px 22px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+  page-break-inside: avoid;
+}
+.paper-title {
+  font-size: 18px; font-weight: 700; color: var(--text);
+  line-height: 1.45; letter-spacing: -0.1px; margin-bottom: 8px;
+}
+.paper-title a { color: var(--text); }
+.paper-title a:hover { color: var(--paper-c); text-decoration: none; }
+.paper-authors { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+.paper-summary { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 10px; }
+.paper-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.paper-stat {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 12px; font-weight: 600; color: var(--paper-c);
+  background: var(--paper-bg); border: 1px solid var(--paper-bd);
+  border-radius: 20px; padding: 2px 10px;
+}
+.paper-links { display: flex; gap: 12px; }
+.paper-links a { font-size: 13px; font-weight: 500; color: var(--paper-c); }
+.paper-links a:hover { text-decoration: underline; }
+
+.article-date { font-size: 12px; color: var(--subtle); }
+.article-title {
+  font-size: 20px; font-weight: 700; color: var(--text);
+  line-height: 1.45; letter-spacing: -0.1px;
+}
+.article-summary { font-size: 16px; color: var(--muted); line-height: 1.7; margin-top: 4px; }
+.read-more { font-size: 14px; color: var(--accent); font-weight: 500; margin-top: 4px; }
+
+/* ── CRYPTO GRID ──────────────────────────────────── */
+.crypto-grid {
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 12px;
+  margin-bottom: 20px;
+}
+.crypto-card {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 12px; padding: 16px 18px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+.crypto-top {
+  display: flex; justify-content: space-between;
+  align-items: flex-start; margin-bottom: 10px;
+}
+.crypto-symbol { font-size: 15px; font-weight: 700; color: var(--text); }
+.crypto-name   { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.crypto-change { font-size: 13px; font-weight: 700; text-align: right; line-height: 1.3; }
+.crypto-change small { display: block; font-size: 10px; font-weight: 400; color: var(--subtle); }
+.crypto-price  {
+  font-size: 20px; font-weight: 700; color: var(--text);
+  font-variant-numeric: tabular-nums; letter-spacing: -0.5px;
+}
+.crypto-mcap { font-size: 11px; color: var(--subtle); margin-top: 6px; }
+.positive { color: var(--green); }
+.negative { color: var(--red); }
+
+/* ── CHART ────────────────────────────────────────── */
+.chart-wrap {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden; margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+.chart-wrap img { width: 100%; display: block; }
+
+/* ── MARKET TABLE ─────────────────────────────────── */
+.market-table-wrap {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden; margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+.market-table { width: 100%; border-collapse: collapse; }
+.market-table thead { background: var(--surface2); }
+.market-table th {
+  font-size: 11px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--muted);
+  padding: 12px 18px; text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.market-table td { padding: 13px 18px; border-bottom: 1px solid var(--border); font-size: 15px; }
+.market-table tr:last-child td { border-bottom: none; }
+.market-table tr:hover td { background: var(--surface2); }
+.market-table .name-cn { font-weight: 600; }
+.market-table .name-en { font-size: 13px; color: var(--muted); }
+.market-table .val { font-variant-numeric: tabular-nums; font-weight: 500; }
+
+/* ── FOOTER ───────────────────────────────────────── */
+.footer {
+  margin-top: 56px; padding: 32px 0;
+  border-top: 1px solid var(--border);
+  background: #fff;
+}
+.footer-inner { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+.footer-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+.footer-sources { font-size: 12px; color: var(--muted); line-height: 1.8; }
+.footer-disclaimer { font-size: 11px; color: var(--subtle); margin-top: 6px; }
+</style>
+</head>
+<body>
+
+<!-- ── LANG TOGGLE ──────────────────────────────────────────────────── -->
+<div class="lang-toggle">
+  <button id="btn-zh" class="active" onclick="setLang('zh')">中文</button>
+  <button id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+
+<!-- ── TOPNAV ──────────────────────────────────────────────────────── -->
+<div style="position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);
+  backdrop-filter:blur(12px);border-bottom:1.5px solid var(--border);padding:0 20px">
+  <div style="max-width:900px;margin:0 auto;display:flex;align-items:center;
+    justify-content:space-between;height:52px;gap:12px">
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:20px">🌏</span>
+      <span style="font-size:17px;font-weight:900;color:var(--text)">AI<span style="color:var(--accent)">情报</span>日报</span>
+    </div>
+    <nav style="display:flex;gap:8px">
+      <a href="./" style="padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;
+        background:var(--accent);color:#fff;border:1.5px solid var(--accent);text-decoration:none">
+        📰 每日新闻
+      </a>
+      <a href="./kol/" style="padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;
+        color:var(--muted);border:1.5px solid var(--border);text-decoration:none">
+        🔭 KOL洞察
+      </a>
+    </nav>
+  </div>
+</div>
+
+<!-- ── HEADER ───────────────────────────────────────────────────────── -->
+<div class="header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="header-eyebrow" data-zh="每日全球要闻快报" data-en="Daily Global Intelligence Brief">每日全球要闻快报</div>
+      <div class="header-title">
+        <span data-zh="全球" data-en="Global ">全球</span><span class="accent" data-zh="要闻" data-en="News">要闻</span><span data-zh=" 快报" data-en=" Brief"> 快报</span>
+      </div>
+    </div>
+    <div class="header-date">
+      <span class="date-main date-zh">2026年5月28日 星期四</span>
+      <span class="date-main date-en" style="display:none">Thursday, May 28, 2026</span>
+      <span class="date-sub">
+        <span data-zh="洛杉矶时间" data-en="Los Angeles Time">洛杉矶时间</span>
+        07:51
+        <span data-zh="发布" data-en="Published">发布</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ── KEY POINTS ───────────────────────────────────────────────── -->
+  <div class="keypoints">
+    <div class="keypoints-label" data-zh="今日要点" data-en="Today's Highlights">今日要点</div>
+    <ul>
+      
+      <li data-zh="【全球】消息人士称，司法部对指控特朗普性侵犯的专栏作家展开调查" data-en="[World] Justice Department launches probe into columnist who accused Trump of sexual assault, source says">【全球】消息人士称，司法部对指控特朗普性侵犯的专栏作家展开调查</li>
+      
+      <li data-zh="【AI】下载：气候技术上市，人工智能炒作指数回归" data-en="[AI] The Download: climate tech goes public and the AI Hype Index returns">【AI】下载：气候技术上市，人工智能炒作指数回归</li>
+      
+      <li data-zh="【加密】BTC ▼3.0% | ETH ▼3.7%（24h 涨跌）" data-en="[Crypto] BTC ▼3.0% | ETH ▼3.7% (24h change)">【加密】BTC ▼3.0% | ETH ▼3.7%（24h 涨跌）</li>
+      
+      <li data-zh="【股市】标普500 ▲0.30%，报 7,542.67 点" data-en="[Markets] S&P 500 ▲0.30%, at 7,542.67">【股市】标普500 ▲0.30%，报 7,542.67 点</li>
+      
+      <li data-zh="【经济】美联储首选指标显示，4月份核心通胀年率达到3.3%，符合预期" data-en="[Economy] Core inflation hit an annual rate of 3.3% in April, as expected, Fed’s preferred gauge shows">【经济】美联储首选指标显示，4月份核心通胀年率达到3.3%，符合预期</li>
+      
+    </ul>
+  </div>
+
+  <!-- ── WORLD NEWS ────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">🌐</span>
+        <span class="section-title" data-zh="全球重大事件" data-en="Major World Events">全球重大事件</span>
+      </div>
+      <span class="section-count">6<span data-zh=" 条" data-en=" stories"> 条</span></span>
+    </div>
+    <div class="articles-list">
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://s.france24.com/media/display/2defa126-5aa0-11f1-99d5-005056a97e36/w:1024/p:16x9/AP26148464591246.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="法国24" data-en="France 24">法国24</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="消息人士称，司法部对指控特朗普性侵犯的专栏作家展开调查" data-en="Justice Department launches probe into columnist who accused Trump of sexual assault, source says">消息人士称，司法部对指控特朗普性侵犯的专栏作家展开调查</div>
+        
+        <div class="article-summary" data-zh="一位知情人士告诉美联社，美国司法部已对专栏作家 E·让·卡罗尔 (E. Jean Carroll) 展开伪证调查，2023 年的民事审判发现，30 年前，他曾在纽约一家百货商店遭到美国总统唐纳德·特朗普 (Donald Trump) 的性侵犯。" data-en="The US Justice Department has launched an investigation for perjury into E. Jean Carroll, the columnist who a 2023 civil trial found had been sexually assaulted by US President Donald Trump in a New York department store 30 years ago, a source close to the matter told AP…">一位知情人士告诉美联社，美国司法部已对专栏作家 E·让·卡罗尔 (E. Jean Carroll) 展开伪证调查，2023 年的民事审判发现，30 年前，他曾在纽约一家百货商店遭到美国总统唐纳德·特朗普 (Donald Trump) 的性侵犯。</div>
+        
+        <a href="https://www.france24.com/en/americas/20260528-justice-department-launches-probe-into-columnist-who-accused-trump-of-sexual-assault-source-says" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://s.france24.com/media/display/81c171ce-5a9d-11f1-aa9f-005056bf30b7/w:1024/p:16x9/capture-8292696406a184a5b4838c0-44276116.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="法国24" data-en="France 24">法国24</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="帕特里克·布鲁尔丑闻：我们可以将艺术与艺术家分开吗？" data-en="Patrick Bruel scandal: Can we separate the art from the artist?">帕特里克·布鲁尔丑闻：我们可以将艺术与艺术家分开吗？</div>
+        
+        <div class="article-summary" data-zh="在本期《Entre Nous》中，我们将深入探讨“帕特里克·布鲁埃尔事件”（在法国，这件事被称为“事件”）。我们讨论了约 30 名女性对这位法国歌手兼演员的性侵犯指控。我们还研究了这起丑闻中的一些难题……" data-en="In this edition of Entre Nous we dive into the "Affaire Patrick Bruel", as it is being called here in France. We discuss the accusations of sexual assault by some 30 women against the French singer and actor. We also examine some of the difficult questions this scandal and…">在本期《Entre Nous》中，我们将深入探讨“帕特里克·布鲁埃尔事件”（在法国，这件事被称为“事件”）。我们讨论了约 30 名女性对这位法国歌手兼演员的性侵犯指控。我们还研究了这起丑闻中的一些难题……</div>
+        
+        <a href="https://www.france24.com/en/tv-shows/entre-nous/20260528-patrick-bruel-scandal-can-we-separate-the-art-from-the-artist" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="德国之声" data-en="Deutsche Welle">德国之声</span>
+          
+        </div>
+        <div class="article-title" data-zh="伊朗重新开放互联网，但旧的限制仍然存在" data-en="Iran turns internet back on, but old restrictions remain">伊朗重新开放互联网，但旧的限制仍然存在</div>
+        
+        <div class="article-summary" data-zh="即使解除了长达 88 天的互联网全面封锁，伊朗与外界的沟通仍然困难。停电造成了重大的经济和社会后果。" data-en="Communication with the outside world remains difficult in Iran, even after an 88-day total internet blockade was lifted. The blackout has had significant economic and social consequences.">即使解除了长达 88 天的互联网全面封锁，伊朗与外界的沟通仍然困难。停电造成了重大的经济和社会后果。</div>
+        
+        <a href="https://www.dw.com/en/iran-turns-internet-back-on-but-old-restrictions-remain/a-77331981?maca=en-rss-en-world-4025-rdf" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="德国之声" data-en="Deutsche Welle">德国之声</span>
+          
+        </div>
+        <div class="article-title" data-zh="英国重新命名多塞特郡著名且活跃的塞纳阿巴斯巨人" data-en="UK re-chalks Dorset's famed and feisty Cerne Abbas Giant">英国重新命名多塞特郡著名且活跃的塞纳阿巴斯巨人</div>
+        
+        <div class="article-summary" data-zh="英国国民信托基金会正在努力更换多塞特郡塞恩·阿巴斯巨人的粉笔轮廓。正如该慈善机构所说，撒克逊时代的雕刻描绘了一个挥舞着棍棒的男子“仍然昂首挺胸”。" data-en="Britain's National Trust is working on replacing the chalk outline of the Cerne Abbas Giant in Dorset. The Saxon-era carving depicts a club-wielding man "still standing tall," as the charity puts it.">英国国民信托基金会正在努力更换多塞特郡塞恩·阿巴斯巨人的粉笔轮廓。正如该慈善机构所说，撒克逊时代的雕刻描绘了一个挥舞着棍棒的男子“仍然昂首挺胸”。</div>
+        
+        <a href="https://www.dw.com/en/uk-re-chalks-dorset-s-famed-and-feisty-cerne-abbas-giant/a-77329497?maca=en-rss-en-world-4025-rdf" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://feeds.npr.org/1004/undefined" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="NPR新闻" data-en="NPR News">NPR新闻</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="美国再次打击伊朗。而且，司法部就 Polymarket 交易向谷歌员工提出指控" data-en="U.S. strikes Iran again. And, DOJ charges Google staffer over Polymarket trades">美国再次打击伊朗。而且，司法部就 Polymarket 交易向谷歌员工提出指控</div>
+        
+        <div class="article-summary" data-zh="美国表示，随着和平谈判继续结束冲突，美国再次袭击了伊朗。而且，联邦政府还指控一名谷歌员工涉嫌在 Polymarket 交易中使用内幕信息。" data-en="The U.S. says it has struck Iran again as peace talks continue to end the conflict. And, the federal government has charged a Google staffer for allegedly using insider information in Polymarket trades.">美国表示，随着和平谈判继续结束冲突，美国再次袭击了伊朗。而且，联邦政府还指控一名谷歌员工涉嫌在 Polymarket 交易中使用内幕信息。</div>
+        
+        <a href="https://www.npr.org/2026/05/28/g-s1-124621/up-first-newsletter-iran-lebanon-israel-us-war-ebola-congo-food-insecurity-google-polymarket" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=nx-s1-5836674" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="NPR新闻" data-en="NPR News">NPR新闻</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="孟加拉国麻疹疫情已造成500多人死亡" data-en="More than 500 people have died in Bangladesh measles outbreak">孟加拉国麻疹疫情已造成500多人死亡</div>
+        
+        <div class="article-summary" data-zh="孟加拉国正在努力为更多儿童接种疫苗，麻疹疫情已造成 500 多人死亡，其中大多数是儿童。" data-en="Bangladesh is scrambling to vaccinate more children amid a measles outbreak that has killed more than 500 people, most of them children.">孟加拉国正在努力为更多儿童接种疫苗，麻疹疫情已造成 500 多人死亡，其中大多数是儿童。</div>
+        
+        <a href="https://www.npr.org/2026/05/28/nx-s1-5836674/more-than-500-people-have-died-in-bangladesh-measles-outbreak" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <!-- ── ECONOMY ───────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">📊</span>
+        <span class="section-title" data-zh="全球股市与经济" data-en="Markets & Economy">全球股市与经济</span>
+      </div>
+    </div>
+
+    
+    <div class="market-table-wrap">
+      <table class="market-table">
+        <thead>
+          <tr>
+            <th data-zh="指数" data-en="Index">指数</th>
+            <th data-zh="全称" data-en="Name">全称</th>
+            <th data-zh="日期" data-en="Date">日期</th>
+            <th data-zh="价格" data-en="Price">价格</th>
+            <th data-zh="涨跌" data-en="Change">涨跌</th>
+            <th data-zh="涨跌幅" data-en="Change %">涨跌幅</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="name-cn" data-zh="标普500" data-en="S&P 500">标普500</td>
+            <td class="name-en">S&P 500</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">05/28</td>
+            <td class="val">7,542.67</td>
+            <td class="positive val">+22.31</td>
+            <td class="positive val">+0.30%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="纳斯达克" data-en="NASDAQ">纳斯达克</td>
+            <td class="name-en">NASDAQ</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">05/28</td>
+            <td class="val">26,758.99</td>
+            <td class="positive val">+84.26</td>
+            <td class="positive val">+0.32%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="道琼斯" data-en="Dow Jones">道琼斯</td>
+            <td class="name-en">Dow Jones</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">05/28</td>
+            <td class="val">50,611.12</td>
+            <td class="negative val">-33.16</td>
+            <td class="negative val">-0.07%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="富时100" data-en="FTSE 100">富时100</td>
+            <td class="name-en">FTSE 100</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">05/28</td>
+            <td class="val">10,427.28</td>
+            <td class="negative val">-77.72</td>
+            <td class="negative val">-0.74%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="德国DAX" data-en="DAX">德国DAX</td>
+            <td class="name-en">DAX</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">05/28</td>
+            <td class="val">25,084.14</td>
+            <td class="negative val">-93.66</td>
+            <td class="negative val">-0.37%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="日经225" data-en="Nikkei 225">日经225</td>
+            <td class="name-en">Nikkei 225</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">05/28</td>
+            <td class="val">64,693.12</td>
+            <td class="negative val">-306.29</td>
+            <td class="negative val">-0.47%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="上证指数" data-en="SSE Composite">上证指数</td>
+            <td class="name-en">SSE Composite</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">05/28</td>
+            <td class="val">4,098.64</td>
+            <td class="positive val">+4.91</td>
+            <td class="positive val">+0.12%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="恒生指数" data-en="Hang Seng">恒生指数</td>
+            <td class="name-en">Hang Seng</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">05/28</td>
+            <td class="val">25,006.16</td>
+            <td class="negative val">-322.07</td>
+            <td class="negative val">-1.27%</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+
+    
+    <div class="chart-wrap">
+      <p style="color:#888;font-size:12px;text-align:center;">[图表请在网站查看]</p>
+    </div>
+    
+
+    <div class="articles-list">
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-economy" data-zh="CNBC" data-en="CNBC">CNBC</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="美联储首选指标显示，4月份核心通胀年率达到3.3%，符合预期" data-en="Core inflation hit an annual rate of 3.3% in April, as expected, Fed’s preferred gauge shows">美联储首选指标显示，4月份核心通胀年率达到3.3%，符合预期</div>
+        
+        <div class="article-summary" data-zh="4 月份 PCE 价格指数预计显示所有项目年通胀率为 3.8%，核心通胀率为 3.3%。" data-en="The PCE price index for April was expected to show an annual inflation rate of 3.8% for all items and 3.3% for core.">4 月份 PCE 价格指数预计显示所有项目年通胀率为 3.8%，核心通胀率为 3.3%。</div>
+        
+        <a href="https://www.cnbc.com/2026/05/28/core-inflation-hit-an-annual-rate-of-3point3percent-in-april-as-expected-feds-preferred-gauge-shows-.html" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-economy" data-zh="CNBC" data-en="CNBC">CNBC</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="油价回落，因美伊延长停火协议等待特朗普批准" data-en="Oil prices pull back on report U.S.-Iran agreement to extend ceasefire awaits Trump approval">油价回落，因美伊延长停火协议等待特朗普批准</div>
+        
+        <div class="article-summary" data-zh="油价周四回落，抹去了美国和伊朗谈判代表就延长停火协议的报道带来的早前涨幅。" data-en="Oil prices pulled back Thursday, erasing earlier gains on a report that U.S. and Iranian negotiators reached an agreement to extend ceasefire.">油价周四回落，抹去了美国和伊朗谈判代表就延长停火协议的报道带来的早前涨幅。</div>
+        
+        <a href="https://www.cnbc.com/2026/05/28/oil-prices-us-strikes-in-iran-revive-strait-of-hormuz-turmoil-fears.html" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://images.mktw.net/im-84527062" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-economy" data-zh="MarketWatch" data-en="MarketWatch">MarketWatch</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="Dollar Tree 的销售额高于预期，因为购物的人减少了，但消费却增加了" data-en="Dollar Tree’s sales top forecasts as fewer people are shopping but they’re spending more">Dollar Tree 的销售额高于预期，因为购物的人减少了，但消费却增加了</div>
+        
+        <div class="article-summary" data-zh="在这家折扣零售商上调全年利润预期后，该股正飙升至四年来最好的一天。" data-en="The stock is surging toward its best day in four years after the discount retailer’s full-year profit outlook was raised.">在这家折扣零售商上调全年利润预期后，该股正飙升至四年来最好的一天。</div>
+        
+        <a href="https://www.marketwatch.com/story/dollar-trees-sales-top-forecasts-as-fewer-people-are-shopping-but-theyre-spending-more-8be5f139?mod=mw_rss_topstories" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://images.mktw.net/im-06838826" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-economy" data-zh="MarketWatch" data-en="MarketWatch">MarketWatch</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="休斯顿火箭队老板斥资 180 亿美元收购凯撒赌场" data-en="Houston Rockets owner is placing an $18 billion bet on Las Vegas by buying Caesars">休斯顿火箭队老板斥资 180 亿美元收购凯撒赌场</div>
+        
+        <div class="article-summary" data-zh="拥有 NBA 休斯敦火箭队和金块赌场的蒂尔曼·费尔蒂塔 (Tilman Fertitta) 的控股公司正在以近 180 亿美元的交易收购凯撒娱乐公司 (Caesars Entertainment)。" data-en="The holding company of Tilman Fertitta, who owns the NBA’s Houston Rockets and Golden Nugget casinos, is buying Caesars Entertainment in a deal valued at nearly $18 billion.">拥有 NBA 休斯敦火箭队和金块赌场的蒂尔曼·费尔蒂塔 (Tilman Fertitta) 的控股公司正在以近 180 亿美元的交易收购凯撒娱乐公司 (Caesars Entertainment)。</div>
+        
+        <a href="https://www.marketwatch.com/story/houston-rockets-owner-is-making-an-18-billion-bet-on-las-vegas-by-buying-caesars-f9c9bbef?mod=mw_rss_topstories" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <!-- ── AI & TECH ─────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">🤖</span>
+        <span class="section-title" data-zh="AI 与科技" data-en="AI & Technology">AI 与科技</span>
+      </div>
+      <span class="section-count">5<span data-zh=" 条" data-en=" stories"> 条</span></span>
+    </div>
+    <div class="articles-list">
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://wp.technologyreview.com/wp-content/uploads/2026/05/FF_01-2_web-edited.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="MIT技术评论" data-en="MIT Tech Review">MIT技术评论</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="下载：气候技术上市，人工智能炒作指数回归" data-en="The Download: climate tech goes public and the AI Hype Index returns">下载：气候技术上市，人工智能炒作指数回归</div>
+        
+        <div class="article-summary" data-zh="这是今天的《下载》版本，这是我们的工作日时事通讯，每天提供技术世界中正在发生的事情。气候技术公司正在上市。接下来是什么？太阳能和电池公司 Solv Energy 在 2 月份上市，市值达到 60 亿美元……" data-en="This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Climate tech companies are going public. What’s next? Solar and battery company Solv Energy went public in February, hitting a $6 billion…">这是今天的《下载》版本，这是我们的工作日时事通讯，每天提供技术世界中正在发生的事情。气候技术公司正在上市。接下来是什么？太阳能和电池公司 Solv Energy 在 2 月份上市，市值达到 60 亿美元……</div>
+        
+        <a href="https://www.technologyreview.com/2026/05/28/1138085/the-download-climate-tech-ipos-ai-hype-index/" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="MIT技术评论" data-en="MIT Tech Review">MIT技术评论</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="气候技术公司正在上市。接下来是什么？" data-en="Climate tech companies are going public. What’s next?">气候技术公司正在上市。接下来是什么？</div>
+        
+        <div class="article-summary" data-zh="今年，出现了一波著名能源公司通过IPO在美国上市的浪潮。太阳能和电池公司 Solv Energy 于 2 月份上市，估值达 60 亿美元。正在建造小型模块化核反应堆的 X-energy 在四月份也做了同样的事情，它的……" data-en="This year, there’s been a wave of notable energy companies going public via IPO in the US. The solar and battery company Solv Energy went public in February, to the tune of $6 billion. X-energy, which is building small modular nuclear reactors, did the same in April, and its…">今年，出现了一波著名能源公司通过IPO在美国上市的浪潮。太阳能和电池公司 Solv Energy 于 2 月份上市，估值达 60 亿美元。正在建造小型模块化核反应堆的 X-energy 在四月份也做了同样的事情，它的……</div>
+        
+        <a href="https://www.technologyreview.com/2026/05/28/1138067/climate-tech-ipos/" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2026/05/solid-state-drive-ssd-1152x648.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="Ars Technica" data-en="Ars Technica">Ars Technica</span>
+          <span class="article-date">Wed, 27 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="网站有一种监视访问者的新方法：分析他们的 SSD 活动" data-en="Websites have a new way to spy on visitors: Analyzing their SSD activity">网站有一种监视访问者的新方法：分析他们的 SSD 活动</div>
+        
+        <div class="article-summary" data-zh="Telltale SSD 活动可以使用简单的 JavaScript 在浏览器中测量。" data-en="Telltale SSD activity can be measured in the browser using simple JavaScript.">Telltale SSD 活动可以使用简单的 JavaScript 在浏览器中测量。</div>
+        
+        <a href="https://arstechnica.com/security/2026/05/websites-have-a-new-way-to-spy-on-visitors-analyzing-their-ssd-activity/" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2026/02/gatekeeping-ai-agents-1152x648.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="Ars Technica" data-en="Ars Technica">Ars Technica</span>
+          <span class="article-date">Tue, 26 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="数以百万计的人工智能代理受到开源包中严重漏洞的威胁" data-en="Millions of AI agents imperiled by critical vulnerability in open source package">数以百万计的人工智能代理受到开源包中严重漏洞的威胁</div>
+        
+        <div class="article-summary" data-zh="“BadHost”是在 Starlette 中发现的，该软件包每周下载量为 3.25 亿次。" data-en=""BadHost" was found in Starlette, a package with 325 million weekly downloads.">“BadHost”是在 Starlette 中发现的，该软件包每周下载量为 3.25 亿次。</div>
+        
+        <a href="https://arstechnica.com/information-technology/2026/05/millions-of-ai-agents-imperiled-by-critical-vulnerability-in-open-source-package/" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25698444/DSC08567_processed_2.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="The Verge AI" data-en="The Verge AI">The Verge AI</span>
+          <span class="article-date">2026-05-28T10:33</span>
+        </div>
+        <div class="article-title" data-zh="这些新的 iOS 27 渲染暗示了 Siri 的重大重新设计" data-en="These new iOS 27 renders hint at Siri’s big redesign">这些新的 iOS 27 渲染暗示了 Siri 的重大重新设计</div>
+        
+        <div class="article-summary" data-zh="苹果期待已久的 Siri 改革预计将在 iOS 27 中发布，它可能看起来很像带有 Liquid Glass 的 ChatGPT。彭博社的渲染图提供了 iOS 27 的预览，包括 Siri 的新应用程序和聊天界面。渲染图“基于……查看的信息”" data-en="Apple's long-awaited Siri overhaul, expected to arrive in iOS 27, might look a lot like ChatGPT with a splash of Liquid Glass. Renders from Bloomberg offer a preview of iOS 27, including the new app and chat interface for Siri. The renders are "based on information viewed by…">苹果期待已久的 Siri 改革预计将在 iOS 27 中发布，它可能看起来很像带有 Liquid Glass 的 ChatGPT。彭博社的渲染图提供了 iOS 27 的预览，包括 Siri 的新应用程序和聊天界面。渲染图“基于……查看的信息”</div>
+        
+        <a href="https://www.theverge.com/tech/938915/ios-27-siri-renders-bloomberg" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <!-- ── PAPERS ───────────────────────────────────────────────────── -->
+  
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">🔬</span>
+        <span class="section-title" data-zh="前沿论文精选" data-en="Top Research Papers">前沿论文精选</span>
+      </div>
+      <span class="section-count">5<span data-zh=" 篇" data-en=" papers"> 篇</span></span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-05-27</span>
+        <span class="paper-stat">▲ 115 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 1</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2605.28816" target="_blank">Gamma-World: Generative Multi-Agent World Modeling Beyond Two Players</a>
+      </div>
+      
+      <div class="paper-authors">Fangfu Liu, Kai He, Tianchang Shen, Tianshi Cao 等</div>
+      
+      
+      <div class="paper-summary" data-zh="之前的AI世界模型（让AI学会预测未来画面的技术）主要只能处理单个角色的情况，就像只能模拟一个人在房间里活动。但现实中经常需要多个角色同时互动，比如多人游戏或多个机器人协作，这就像要同时预测十个人在房间里的互动会怎样发展。这篇论文提出了一个叫"Simplex Rotary Agent Encoding"的新方法，用数学上的对称结构来表示多个智能体（AI控制的角色），让它们既能独立控制，又能互相影响，还能高效运算。这样的技术有实际意义，能让AI生成更真实的多人交互视频，未来可以应用在游戏、虚拟现实或机器人群体协作的训练和模拟上" data-en="World models for interactive video generation have largely focused on single-agent settings, where future observations are generated from a single control signal. However, many generated environments ">之前的AI世界模型（让AI学会预测未来画面的技术）主要只能处理单个角色的情况，就像只能模拟一个人在房间里活动。但现实中经常需要多个角色同时互动，比如多人游戏或多个机器人协作，这就像要同时预测十个人在房间里的互动会怎样发展。这篇论文提出了一个叫"Simplex Rotary Agent Encoding"的新方法，用数学上的对称结构来表示多个智能体（AI控制的角色），让它们既能独立控制，又能互相影响，还能高效运算。这样的技术有实际意义，能让AI生成更真实的多人交互视频，未来可以应用在游戏、虚拟现实或机器人群体协作的训练和模拟上</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2605.28816" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2605.28816" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-05-27</span>
+        <span class="paper-stat">▲ 73 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 1</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2605.28293" target="_blank">ProRL: Effective Reinforcement Learning for Proactive Recommendation via Rectified Policy Gradient Estimation</a>
+      </div>
+      
+      <div class="paper-authors">Hongru Hou, Tiehua Mei, Denghui Geng, Jinhui Huang 等</div>
+      
+      
+      <div class="paper-summary" data-zh="想象你是个导购员，要引导顾客逐步接受你推荐的商品。以前用强化学习（一种让AI通过试错学会决策的方法）来优化这个过程时，会出现两个问题：一是系统会倾向于推荐更多商品来获得更高分数，而不是真正有效地改变用户偏好；二是每一步的学习信号太嘈杂，导致AI学习效率低。这篇论文通过改进梯度估计（AI学习的方向和力度）的方法，去掉了那些虚假的奖励偏差，让AI能更聪明地学会用最少的推荐步骤真正引导用户，这对电商平台精准推荐和用户体验都有实际帮助。" data-en="Proactive Recommender Systems (PRSs) aim to guide user preference shift toward target items by generating paths of intermediate recommendations. Reinforcement learning (RL) provides a principled frame">想象你是个导购员，要引导顾客逐步接受你推荐的商品。以前用强化学习（一种让AI通过试错学会决策的方法）来优化这个过程时，会出现两个问题：一是系统会倾向于推荐更多商品来获得更高分数，而不是真正有效地改变用户偏好；二是每一步的学习信号太嘈杂，导致AI学习效率低。这篇论文通过改进梯度估计（AI学习的方向和力度）的方法，去掉了那些虚假的奖励偏差，让AI能更聪明地学会用最少的推荐步骤真正引导用户，这对电商平台精准推荐和用户体验都有实际帮助。</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2605.28293" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2605.28293" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-05-27</span>
+        <span class="paper-stat">▲ 64 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 2</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2605.28774" target="_blank">Agent Explorative Policy Optimization for Multimodal Agentic Reasoning</a>
+      </div>
+      
+      <div class="paper-authors">Minki Kang, Shizhe Diao, Ryo Hachiuma, Sung Ju Hwang 等</div>
+      
+      
+      <div class="paper-summary" data-zh="这篇论文解决的是AI智能体（能调用外部工具的大语言模型）在学习过程中的一个关键问题。想象你在教一个助手解决难题，它既可以自己思考也可以查工具书，但训练时发现一个怪现象：它很少主动去查工具书，而且一旦查了，往往整个小组的尝试都失败了，导致根本学不到什么时候该用工具。论文提出了AXPO这个新训练方法，它的核心思路是对那些"全错的工具使用尝试"特别关照，通过重新采样和调整来保证AI能从这些失败案例中学到东西，最终让AI更聪明地判断什么时候该动脑筋自己想、什么时候该借助工具。这种改进对真实应用" data-en="Vision-language models with extended reasoning succeed on complex problems, but many real-world problems require external tools that internal reasoning alone often cannot resolve. Agentic reasoning th">这篇论文解决的是AI智能体（能调用外部工具的大语言模型）在学习过程中的一个关键问题。想象你在教一个助手解决难题，它既可以自己思考也可以查工具书，但训练时发现一个怪现象：它很少主动去查工具书，而且一旦查了，往往整个小组的尝试都失败了，导致根本学不到什么时候该用工具。论文提出了AXPO这个新训练方法，它的核心思路是对那些"全错的工具使用尝试"特别关照，通过重新采样和调整来保证AI能从这些失败案例中学到东西，最终让AI更聪明地判断什么时候该动脑筋自己想、什么时候该借助工具。这种改进对真实应用</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2605.28774" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2605.28774" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-05-27</span>
+        <span class="paper-stat">▲ 52 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 2</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2605.28820" target="_blank">From Pixels to Words -- Towards Native One-Vision Models at Scale</a>
+      </div>
+      
+      <div class="paper-authors">Haiwen Diao, Jiahao Wang, Penghao Wu, Yuhao Dong 等</div>
+      
+      
+      <div class="paper-summary" data-zh="之前的视觉语言模型（让AI理解图片和文字）就像工厂流水线，图片和文字分别在不同车间处理，最后才拼接到一起，这样容易丢失细节信息。这篇论文提出了一个更聪明的方法NEO-ov，直接把像素信息和文字放在同一个大脑里一起学习，就像让AI从看第一眼就开始思考，而不是看完再想，这样能更好地理解图片里的空间位置关系和视频里的时间变化。这个改进让AI在理解多张图片、视频和精确定位等复杂任务上有了明显提升，为未来真正智能的视觉助手奠定了基础。" data-en="Current vision-language models (VLMs) typically stitch together separate image encoders and language decoders via multi-stage alignment, a modular framework that inevitably fragments pixel-level signa">之前的视觉语言模型（让AI理解图片和文字）就像工厂流水线，图片和文字分别在不同车间处理，最后才拼接到一起，这样容易丢失细节信息。这篇论文提出了一个更聪明的方法NEO-ov，直接把像素信息和文字放在同一个大脑里一起学习，就像让AI从看第一眼就开始思考，而不是看完再想，这样能更好地理解图片里的空间位置关系和视频里的时间变化。这个改进让AI在理解多张图片、视频和精确定位等复杂任务上有了明显提升，为未来真正智能的视觉助手奠定了基础。</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2605.28820" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2605.28820" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-05-27</span>
+        <span class="paper-stat">▲ 39 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 1</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2605.28814" target="_blank">Self-Improving Language Models with Bidirectional Evolutionary Search</a>
+      </div>
+      
+      <div class="paper-authors">Guowei Xu, Zhenting Qi, Huangyuan Su, Weirui Ye 等</div>
+      
+      
+      <div class="paper-summary" data-zh="这篇论文解决的问题是：现在的大语言模型在自我改进时，通常用"从左到右逐字生成"的方式来搜索答案，就像你写作文只能从第一句开始往后写，很难跳出已有的思路。而且这些方法很依赖于对错误答案的判断信号，导致探索范围很有限。论文提出的双向进化搜索相当于既允许从前往后逐步展开思路，也允许从后往前分解目标，还引入了类似生物进化中"杂交重组"的操作，把不同的思路片段重新组合，这样就能找到那些模型原本不太可能生成但其实很不错的答案。实际意义是让AI在解决复杂问题时更灵活、更聪明，不再被固定的" data-en="Search has been proposed as an effective method for self-improving language models and agentic systems, both for post-training sample generation and for inference. However, widely used methods such as">这篇论文解决的问题是：现在的大语言模型在自我改进时，通常用"从左到右逐字生成"的方式来搜索答案，就像你写作文只能从第一句开始往后写，很难跳出已有的思路。而且这些方法很依赖于对错误答案的判断信号，导致探索范围很有限。论文提出的双向进化搜索相当于既允许从前往后逐步展开思路，也允许从后往前分解目标，还引入了类似生物进化中"杂交重组"的操作，把不同的思路片段重新组合，这样就能找到那些模型原本不太可能生成但其实很不错的答案。实际意义是让AI在解决复杂问题时更灵活、更聪明，不再被固定的</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2605.28814" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2605.28814" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+  
+
+  <!-- ── CRYPTO ────────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">₿</span>
+        <span class="section-title" data-zh="加密货币市场" data-en="Crypto Market">加密货币市场</span>
+      </div>
+    </div>
+
+    
+    <div class="crypto-grid">
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">BTC</div>
+            <div class="crypto-name" data-zh="比特币" data-en="比特币">比特币</div>
+          </div>
+          <div class="crypto-change negative">
+            -3.04%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $72,690
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $1,456B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">ETH</div>
+            <div class="crypto-name" data-zh="以太坊" data-en="以太坊">以太坊</div>
+          </div>
+          <div class="crypto-change negative">
+            -3.74%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $1,983
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $239B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">SOL</div>
+            <div class="crypto-name" data-zh="索拉纳" data-en="索拉纳">索拉纳</div>
+          </div>
+          <div class="crypto-change negative">
+            -3.57%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $80.70
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $47B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">BNB</div>
+            <div class="crypto-name" data-zh="币安币" data-en="币安币">币安币</div>
+          </div>
+          <div class="crypto-change negative">
+            -3.12%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $632.17
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $85B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">XRP</div>
+            <div class="crypto-name" data-zh="XRP" data-en="XRP">XRP</div>
+          </div>
+          <div class="crypto-change negative">
+            -2.06%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $1.30
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $80B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">ADA</div>
+            <div class="crypto-name" data-zh="卡尔达诺" data-en="卡尔达诺">卡尔达诺</div>
+          </div>
+          <div class="crypto-change negative">
+            -2.74%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $0.2325
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $9B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">DOGE</div>
+            <div class="crypto-name" data-zh="狗狗币" data-en="狗狗币">狗狗币</div>
+          </div>
+          <div class="crypto-change negative">
+            -3.35%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $0.0979
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $15B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">AVAX</div>
+            <div class="crypto-name" data-zh="雪崩" data-en="雪崩">雪崩</div>
+          </div>
+          <div class="crypto-change negative">
+            -3.24%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $8.84
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $4B</div>
+        
+      </div>
+      
+    </div>
+    
+    <div style="text-align:right;font-size:12px;color:var(--subtle);margin-top:-6px;margin-bottom:8px;">
+      <span data-zh="实时数据 · 更新于" data-en="Live data · Updated">实时数据 · 更新于</span> 2026-05-28 14:50 UTC
+    </div>
+    
+    
+
+    
+    <div class="chart-wrap">
+      <p style="color:#888;font-size:12px;text-align:center;">[图表请在网站查看]</p>
+    </div>
+    
+
+    <div class="articles-list">
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://uploads.panewslab.com/5bee5808-d018-409d-9257-89c453c91b2b" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="PA News" data-en="PA News">PA News</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="币安Alpha将Sealcoin（QAIT）上线时间延迟至23:00" data-en="Binance Alpha delays Sealcoin (QAIT) listing to 23:00">币安Alpha将Sealcoin（QAIT）上线时间延迟至23:00</div>
+        
+        <div class="article-summary" data-zh="PANews 5月28日消息，币安Alpha将Sealcoin（QAIT）上线时间延迟至今天 23:00（UTC+8）。符合条件的用户可于Alpha交易开放后，前往Alpha活动页面使用币安Alpha积分领取空投。" data-en="PANews reported on May 28 that Binance Alpha has delayed the launch of Sealcoin (QAIT) to 23:00 today (UTC+8). Eligible users can go to the Alpha event page to use Binance Alpha Points to receive airdrops after Alpha trading opens.">PANews 5月28日消息，币安Alpha将Sealcoin（QAIT）上线时间延迟至今天 23:00（UTC+8）。符合条件的用户可于Alpha交易开放后，前往Alpha活动页面使用币安Alpha积分领取空投。</div>
+        
+        <a href="https://www.panewslab.com/zh/articles/019e6f0b-68c2-71d2-8bed-99f347dacaa1" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://uploads.panewslab.com/5bee5808-d018-409d-9257-89c453c91b2b" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="PA News" data-en="PA News">PA News</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="YZi Labs 启动 Web3 与 AI 创作者计划" data-en="YZi Labs launches Web3 and AI creator program">YZi Labs 启动 Web3 与 AI 创作者计划</div>
+        
+        <div class="article-summary" data-zh="PANews 5月28日消息，YZi Labs 宣布推出 YZi Labs Creator Program，计划打造覆盖 Web3、AI 和前沿科技领域的精选创作者网络，并接入其超过 300 家投资组合公司的分发渠道。参与创作者可优先接触 YZi Labs 投资组合创始人；项目方与创始人则可通过该计划对接擅长讲述产品与愿景的内容创作者。" data-en="PANews reported on May 28 that YZi Labs announced the launch of the YZi Labs Creator Program, which plans to build a network of selected creators covering Web3, AI and cutting-edge technology fields, and access the distribution channels of its more than 300 portfolio companies. Participating creators have priority access to YZi Labs portfolio founders; project parties and founders can use this program to connect with content creators who are good at telling products and visions.">PANews 5月28日消息，YZi Labs 宣布推出 YZi Labs Creator Program，计划打造覆盖 Web3、AI 和前沿科技领域的精选创作者网络，并接入其超过 300 家投资组合公司的分发渠道。参与创作者可优先接触 YZi Labs 投资组合创始人；项目方与创始人则可通过该计划对接擅长讲述产品与愿景的内容创作者。</div>
+        
+        <a href="https://www.panewslab.com/zh/articles/019e6efc-de23-71f8-82bd-f78fc88e662f" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://uploads.panewslab.com/5bee5808-d018-409d-9257-89c453c91b2b" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="PA News" data-en="PA News">PA News</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="Lightning Capital成立1亿美元AI基金，前a16z合伙人Michele Griffin出任COO" data-en="Lightning Capital establishes US$100 million AI fund, former a16z partner Michele Griffin serves as COO">Lightning Capital成立1亿美元AI基金，前a16z合伙人Michele Griffin出任COO</div>
+        
+        <div class="article-summary" data-zh="PANews 5月28日消息，据TechFundingNews报道，Lightning Capital宣布成立1亿美元“AI涟漪效应”早期基金，并任命前Andreessen Horowitz合伙人Michele Griffin担任基金管理合伙人兼COO，据悉该基金将投资专注于AI从实验走向落地过程中对行业、基础设施及工作方式产生二次影响的创业企业，并且提供二级市场及现金管理策略并为家族办公室及企业投资者提供灵活的流动性选择。" data-en="PANews reported on May 28 that according to TechFundingNews, Lightning Capital announced the establishment of a US$100 million "AI Ripple Effect" early-stage fund and appointed former Andreessen Horowitz partner Michele Griffin as fund managing partner and COO. It is reported that the fund will invest in startups that will have a secondary impact on industries, infrastructure and work methods as AI moves from experimentation to implementation, and will provide secondary markets and cash management strategies as well as flexible liquidity options for family offices and corporate investors.">PANews 5月28日消息，据TechFundingNews报道，Lightning Capital宣布成立1亿美元“AI涟漪效应”早期基金，并任命前Andreessen Horowitz合伙人Michele Griffin担任基金管理合伙人兼COO，据悉该基金将投资专注于AI从实验走向落地过程中对行业、基础设施及工作方式产生二次影响的创业企业，并且提供二级市场及现金管理策略并为家族办公室及企业投资者提供灵活的流动性选择。</div>
+        
+        <a href="https://www.panewslab.com/zh/articles/019e6efa-90c0-72d8-a85f-e7060308c4fc" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://uploads.panewslab.com/5bee5808-d018-409d-9257-89c453c91b2b" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="PA News" data-en="PA News">PA News</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="美伊据称就60天停火谅解备忘录达成一致，尚待特朗普最终批准" data-en="The U.S. and Iran reportedly reached an agreement on a 60-day ceasefire memorandum of understanding, pending Trump’s final approval">美伊据称就60天停火谅解备忘录达成一致，尚待特朗普最终批准</div>
+        
+        <div class="article-summary" data-zh="PANews 5月28日消息，据AXIOS报道，两名美国官员表示，美国和伊朗谈判代表已就一项为期60天的谅解备忘录达成一致，以延长停火并启动关于伊朗核计划的谈判，但特朗普总统尚未给予最终批准。" data-en="PANews, May 28, according to AXIOS, two U.S. officials said that U.S. and Iranian negotiators have agreed on a 60-day memorandum of understanding to extend the ceasefire and launch negotiations on Iran’s nuclear program, but President Trump has not yet given final approval.">PANews 5月28日消息，据AXIOS报道，两名美国官员表示，美国和伊朗谈判代表已就一项为期60天的谅解备忘录达成一致，以延长停火并启动关于伊朗核计划的谈判，但特朗普总统尚未给予最终批准。</div>
+        
+        <a href="https://www.panewslab.com/zh/articles/019e6ef1-4bc7-7747-b8f2-ca829873a9ee" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://cdn.sanity.io/images/s3y3vcno/production/1f4c9599110adfd528330af4b0f0f5023674e8b6-7008x4672.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="CoinDesk" data-en="CoinDesk">CoinDesk</span>
+          <span class="article-date">Thu, 28 May 2026</span>
+        </div>
+        <div class="article-title" data-zh="训练有素的人工智能代理是打破交易所流失模式所需的颠覆者" data-en="Disciplined AI agents are the disruptor needed to break the exchange churn model">训练有素的人工智能代理是打破交易所流失模式所需的颠覆者</div>
+        
+        <a href="https://www.coindesk.com/opinion/2026/05/28/disciplined-ai-agents-are-the-disruptor-needed-to-break-the-exchange-churn-model" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+
+</div>
+
+<!-- ── FOOTER ────────────────────────────────────────────────────────── -->
+<div class="footer">
+  <div class="footer-inner">
+    <div class="footer-title">
+      <span data-zh="每日全球要闻快报" data-en="Daily Global News Digest">每日全球要闻快报</span>
+      &nbsp;·&nbsp;
+      <span class="date-zh">2026年5月28日 星期四</span>
+      <span class="date-en" style="display:none">Thursday, May 28, 2026</span>
+    </div>
+    <div class="footer-sources">
+      <span data-zh="数据来源：" data-en="Sources: ">数据来源：</span>Reuters · BBC · NY Times · The Guardian · MIT Tech Review · Ars Technica · PA News · CoinDesk · The Block · Blockworks · The Defiant · CoinGecko · yfinance
+    </div>
+    <div class="footer-disclaimer">
+      <span data-zh="本报告由自动化程序生成，仅供参考，不构成投资建议。" data-en="Auto-generated for informational purposes only. Not investment advice.">本报告由自动化程序生成，仅供参考，不构成投资建议。</span>
+    </div>
+  </div>
+</div>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[data-zh]').forEach(function(el) {
+    el.innerHTML = lang==='en' ? (el.getAttribute('data-en')||el.getAttribute('data-zh')) : el.getAttribute('data-zh');
+  });
+  document.querySelectorAll('.date-zh').forEach(function(el){ el.style.display=lang==='en'?'none':''; });
+  document.querySelectorAll('.date-en').forEach(function(el){ el.style.display=lang==='en'?'':'none'; });
+  document.getElementById('btn-zh').classList.toggle('active', lang==='zh');
+  document.getElementById('btn-en').classList.toggle('active', lang==='en');
+  try { localStorage.setItem('news_lang', lang); } catch(e){}
+}
+(function(){ try{ var s=localStorage.getItem('news_lang'); if(s==='en') setLang('en'); }catch(e){} })();
+</script>
+</body>
+</html>
