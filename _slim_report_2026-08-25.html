@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Brief — 2026年8月25日 星期二</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:         #f0f2f5;
+  --surface:    #ffffff;
+  --surface2:   #f8f9fc;
+  --border:     #e8eaed;
+  --border2:    #d1d5db;
+  --text:       #111827;
+  --muted:      #6b7280;
+  --subtle:     #9ca3af;
+  --accent:     #1d4ed8;
+  --accent-bg:  #eff6ff;
+  --green:      #059669;
+  --green-bg:   #f0fdf4;
+  --red:        #dc2626;
+  --red-bg:     #fef2f2;
+  --orange:     #ea580c;
+  --orange-bg:  #fff7ed;
+  --purple:     #7c3aed;
+  --purple-bg:  #f5f3ff;
+
+  --world-c:  #dc2626; --world-bg:  #fef2f2; --world-bd:  #fecaca;
+  --ai-c:     #7c3aed; --ai-bg:     #f5f3ff; --ai-bd:     #ddd6fe;
+  --crypto-c: #d97706; --crypto-bg: #fffbeb; --crypto-bd: #fde68a;
+  --eco-c:    #059669; --eco-bg:    #f0fdf4; --eco-bd:    #a7f3d0;
+  --paper-c:  #0d9488; --paper-bg:  #f0fdfa; --paper-bd:  #99f6e4;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter','Noto Sans SC','Microsoft YaHei',-apple-system,sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── LANG TOGGLE ──────────────────────────────────── */
+.lang-toggle {
+  position: fixed; top: 16px; right: 20px; z-index: 999;
+  display: flex; gap: 2px;
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 8px; padding: 3px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.lang-toggle button {
+  background: transparent; border: none;
+  color: var(--muted); font-size: 12px; font-weight: 600;
+  padding: 4px 14px; border-radius: 6px; cursor: pointer;
+  letter-spacing: .5px; transition: all .15s; font-family: inherit;
+}
+.lang-toggle button.active { background: var(--accent); color: #fff; }
+@media print { .lang-toggle { display: none; } }
+
+/* ── HEADER ───────────────────────────────────────── */
+.header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0 22px;
+}
+.header-inner {
+  max-width: 1080px; margin: 0 auto; padding: 0 32px;
+  display: flex; align-items: flex-end; justify-content: space-between;
+  flex-wrap: wrap; gap: 16px;
+}
+.header-brand {}
+.header-eyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 6px;
+}
+.header-title {
+  font-size: 38px; font-weight: 700; color: var(--text);
+  letter-spacing: -0.5px; line-height: 1.15;
+}
+.header-title .accent { color: var(--accent); }
+.header-date {
+  text-align: right;
+}
+.header-date .date-main {
+  font-size: 17px; font-weight: 600; color: var(--text); display: block;
+}
+.header-date .date-sub {
+  font-size: 15px; color: var(--muted); margin-top: 2px; display: block;
+}
+
+/* ── LAYOUT ───────────────────────────────────────── */
+.container { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+
+/* ── KEY POINTS ───────────────────────────────────── */
+.keypoints {
+  margin: 28px 0 0;
+  background: var(--accent-bg);
+  border: 1px solid #bfdbfe;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  padding: 20px 26px;
+}
+.keypoints-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 12px;
+}
+.keypoints ul { list-style: none; }
+.keypoints li {
+  font-size: 17px; color: var(--text);
+  padding: 5px 0 5px 16px;
+  position: relative;
+  border-bottom: 1px solid #dbeafe;
+}
+.keypoints li:last-child { border-bottom: none; padding-bottom: 0; }
+.keypoints li::before {
+  content: ''; position: absolute; left: 0; top: 13px;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+}
+
+/* ── SECTION ──────────────────────────────────────── */
+.section { margin-top: 40px; }
+.section-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 18px; padding-bottom: 14px;
+  border-bottom: 2px solid var(--border);
+}
+.section-left { display: flex; align-items: center; gap: 10px; }
+.section-icon { font-size: 22px; }
+.section-title { font-size: 26px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+.section-count { font-size: 15px; color: var(--muted); }
+
+/* ── ARTICLE CARD ─────────────────────────────────── */
+.articles-list { display: flex; flex-direction: column; gap: 14px; }
+.article-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 20px 22px;
+  display: flex; gap: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+  page-break-inside: avoid;
+}
+.article-img-wrap {
+  flex: 0 0 168px; height: 112px;
+  border-radius: 8px; overflow: hidden;
+  background: var(--surface2);
+}
+.article-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.article-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.article-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+.badge {
+  display: inline-block; font-size: 11px; font-weight: 600;
+  letter-spacing: .3px; padding: 2px 10px; border-radius: 20px;
+  border: 1px solid;
+}
+.badge-world  { background: var(--world-bg);  color: var(--world-c);  border-color: var(--world-bd); }
+.badge-ai     { background: var(--ai-bg);     color: var(--ai-c);     border-color: var(--ai-bd); }
+.badge-crypto { background: var(--crypto-bg); color: var(--crypto-c); border-color: var(--crypto-bd); }
+.badge-economy{ background: var(--eco-bg);    color: var(--eco-c);    border-color: var(--eco-bd); }
+.badge-paper  { background: var(--paper-bg);  color: var(--paper-c);  border-color: var(--paper-bd); }
+
+/* ── PAPER CARD ───────────────────────────────────────── */
+.paper-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--paper-c);
+  padding: 20px 22px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+  page-break-inside: avoid;
+}
+.paper-title {
+  font-size: 18px; font-weight: 700; color: var(--text);
+  line-height: 1.45; letter-spacing: -0.1px; margin-bottom: 8px;
+}
+.paper-title a { color: var(--text); }
+.paper-title a:hover { color: var(--paper-c); text-decoration: none; }
+.paper-authors { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+.paper-summary { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 10px; }
+.paper-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.paper-stat {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 12px; font-weight: 600; color: var(--paper-c);
+  background: var(--paper-bg); border: 1px solid var(--paper-bd);
+  border-radius: 20px; padding: 2px 10px;
+}
+.paper-links { display: flex; gap: 12px; }
+.paper-links a { font-size: 13px; font-weight: 500; color: var(--paper-c); }
+.paper-links a:hover { text-decoration: underline; }
+
+.article-date { font-size: 12px; color: var(--subtle); }
+.article-title {
+  font-size: 20px; font-weight: 700; color: var(--text);
+  line-height: 1.45; letter-spacing: -0.1px;
+}
+.article-summary { font-size: 16px; color: var(--muted); line-height: 1.7; margin-top: 4px; }
+.read-more { font-size: 14px; color: var(--accent); font-weight: 500; margin-top: 4px; }
+
+/* ── CRYPTO GRID ──────────────────────────────────── */
+.crypto-grid {
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 12px;
+  margin-bottom: 20px;
+}
+.crypto-card {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 12px; padding: 16px 18px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+.crypto-top {
+  display: flex; justify-content: space-between;
+  align-items: flex-start; margin-bottom: 10px;
+}
+.crypto-symbol { font-size: 15px; font-weight: 700; color: var(--text); }
+.crypto-name   { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.crypto-change { font-size: 13px; font-weight: 700; text-align: right; line-height: 1.3; }
+.crypto-change small { display: block; font-size: 10px; font-weight: 400; color: var(--subtle); }
+.crypto-price  {
+  font-size: 20px; font-weight: 700; color: var(--text);
+  font-variant-numeric: tabular-nums; letter-spacing: -0.5px;
+}
+.crypto-mcap { font-size: 11px; color: var(--subtle); margin-top: 6px; }
+.positive { color: var(--green); }
+.negative { color: var(--red); }
+
+/* ── CHART ────────────────────────────────────────── */
+.chart-wrap {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden; margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+.chart-wrap img { width: 100%; display: block; }
+
+/* ── MARKET TABLE ─────────────────────────────────── */
+.market-table-wrap {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden; margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+.market-table { width: 100%; border-collapse: collapse; }
+.market-table thead { background: var(--surface2); }
+.market-table th {
+  font-size: 11px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--muted);
+  padding: 12px 18px; text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.market-table td { padding: 13px 18px; border-bottom: 1px solid var(--border); font-size: 15px; }
+.market-table tr:last-child td { border-bottom: none; }
+.market-table tr:hover td { background: var(--surface2); }
+.market-table .name-cn { font-weight: 600; }
+.market-table .name-en { font-size: 13px; color: var(--muted); }
+.market-table .val { font-variant-numeric: tabular-nums; font-weight: 500; }
+
+/* ── FOOTER ───────────────────────────────────────── */
+.footer {
+  margin-top: 56px; padding: 32px 0;
+  border-top: 1px solid var(--border);
+  background: #fff;
+}
+.footer-inner { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+.footer-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+.footer-sources { font-size: 12px; color: var(--muted); line-height: 1.8; }
+.footer-disclaimer { font-size: 11px; color: var(--subtle); margin-top: 6px; }
+</style>
+</head>
+<body>
+
+<!-- ── LANG TOGGLE ──────────────────────────────────────────────────── -->
+<div class="lang-toggle">
+  <button id="btn-zh" class="active" onclick="setLang('zh')">中文</button>
+  <button id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+
+<!-- ── TOPNAV ──────────────────────────────────────────────────────── -->
+<div style="position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);
+  backdrop-filter:blur(12px);border-bottom:1.5px solid var(--border);padding:0 20px">
+  <div style="max-width:900px;margin:0 auto;display:flex;align-items:center;
+    justify-content:space-between;height:52px;gap:12px">
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:20px">🌏</span>
+      <span style="font-size:17px;font-weight:900;color:var(--text)">AI<span style="color:var(--accent)">情报</span>日报</span>
+    </div>
+    <nav style="display:flex;gap:8px">
+      <a href="./" style="padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;
+        background:var(--accent);color:#fff;border:1.5px solid var(--accent);text-decoration:none">
+        📰 每日新闻
+      </a>
+      <a href="./kol/" style="padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;
+        color:var(--muted);border:1.5px solid var(--border);text-decoration:none">
+        🔭 KOL洞察
+      </a>
+    </nav>
+  </div>
+</div>
+
+<!-- ── HEADER ───────────────────────────────────────────────────────── -->
+<div class="header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="header-eyebrow" data-zh="每日全球要闻快报" data-en="Daily Global Intelligence Brief">每日全球要闻快报</div>
+      <div class="header-title">
+        <span data-zh="全球" data-en="Global ">全球</span><span class="accent" data-zh="要闻" data-en="News">要闻</span><span data-zh=" 快报" data-en=" Brief"> 快报</span>
+      </div>
+    </div>
+    <div class="header-date">
+      <span class="date-main date-zh">2026年8月25日 星期二</span>
+      <span class="date-main date-en" style="display:none">Tuesday, August 25, 2026</span>
+      <span class="date-sub">
+        <span data-zh="洛杉矶时间" data-en="Los Angeles Time">洛杉矶时间</span>
+        04:52
+        <span data-zh="发布" data-en="Published">发布</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ── KEY POINTS ───────────────────────────────────────────────── -->
+  <div class="keypoints">
+    <div class="keypoints-label" data-zh="今日要点" data-en="Today's Highlights">今日要点</div>
+    <ul>
+      
+      <li data-zh="【全球】Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="[World] Haiti: Gang coalition unleashes violent new attack">【全球】Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</li>
+      
+      <li data-zh="【AI】Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="[AI] Welcome to the spiderverse, a world measured through webs">【AI】Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</li>
+      
+      <li data-zh="【加密】BTC ▲1.3% | ETH ▼0.4%（24h 涨跌）" data-en="[Crypto] BTC ▲1.3% | ETH ▼0.4% (24h change)">【加密】BTC ▲1.3% | ETH ▼0.4%（24h 涨跌）</li>
+      
+      <li data-zh="【股市】标普500 ▼0.28%，报 7,652.86 点" data-en="[Markets] S&P 500 ▼0.28%, at 7,652.86">【股市】标普500 ▼0.28%，报 7,652.86 点</li>
+      
+      <li data-zh="【经济】Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="[Economy] The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style">【经济】Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</li>
+      
+    </ul>
+  </div>
+
+  <!-- ── WORLD NEWS ────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">🌐</span>
+        <span class="section-title" data-zh="全球重大事件" data-en="Major World Events">全球重大事件</span>
+      </div>
+      <span class="section-count">6<span data-zh=" 条" data-en=" stories"> 条</span></span>
+    </div>
+    <div class="articles-list">
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://s.france24.com/media/display/5e8611d6-a072-11f1-8fb1-005056bfb2b6/w:1024/p:16x9/minihaiti.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="法国24" data-en="France 24">法国24</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Haiti: Gang coalition unleashes violent new attack">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="At least 47 people were killed and 22 more injured in an overnight gang raid on a neighbourhood overlooking Haiti's capital of Port-au-Prince, the UN said on Monday, prompting anger over the ​lack of protection from ‌ repeated deadly attacks.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.france24.com/en/video/20260825-haiti-gang-coalition-unleashes-violent-new-attack" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://s.france24.com/media/display/64d5d956-a070-11f1-a5af-005056bfb2b6/w:1024/p:16x9/EN-20260825-092218-092224-CS.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="法国24" data-en="France 24">法国24</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="'Thermal safety: Not just climate in action; it's biology & physiological capacity to cope & recover">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Eve Irvine is pleased to welcome Ronita Bardhan, Professor of Sustainable Built Environment and Health at the University of Cambridge. Extreme heat is no longer simply a question of climate exposure. It is a question of thermal safety, public health, energy security, urban…">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.france24.com/en/thermal-safety-not-just-climate-in-action-it-s-biology-physiological-capacity-to-cope-recover" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="德国之声" data-en="Deutsche Welle">德国之声</span>
+          
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Why Starlink won't open Vietnam's heavily censored internet">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Starlink promises better connectivity in remote and mountainous areas. But in one of Southeast Asia's most tightly controlled online environments, more network access doesn't mean more free speech.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.dw.com/en/why-starlink-won-t-open-vietnam-s-heavily-censored-internet/a-78494983?maca=en-rss-en-world-4025-rdf" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="德国之声" data-en="Deutsche Welle">德国之声</span>
+          
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Will tougher US sanctions disrupt Iran's shadow economy?">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="The US is expanding sanctions on Iran's financial networks, targeting crypto, gold, aviation and shipping. Analysts say the measures may fuel inflation and strengthen informal markets without changing Tehran's behavior.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.dw.com/en/will-tougher-us-sanctions-disrupt-iran-s-shadow-economy/a-78494630?maca=en-rss-en-world-4025-rdf" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://feeds.npr.org/1004/undefined" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="NPR新闻" data-en="NPR News">NPR新闻</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Trump calls leaders to isolate Iran. And, SCOTUS backs Trump for now on mail-in voting">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="President Trump is calling on world leaders to join his economic war against Iran. And, the Supreme Court is backing the president for now on his order to restrict mail-in voting.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.npr.org/2026/08/25/g-s1-140004/up-first-newsletter-iran-economic-war-scotus-mail-in-voting-dhs-privacy" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8516x5678+0+0/resize/8516x5678!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F6a%2F47%2Fdba05d284318a540221bd45f9cfb%2Fap26122373189543.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="NPR新闻" data-en="NPR News">NPR新闻</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Can Trump's economic war against Iran do what airstrikes and negotiations couldn't?">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="What a new round of U.S. sanctions could mean after nearly six months of war with Iran — and years of economic pressure on the country.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.npr.org/2026/08/25/nx-s1-5943572/trump-iran-sanctions" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <!-- ── ECONOMY ───────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">📊</span>
+        <span class="section-title" data-zh="全球股市与经济" data-en="Markets & Economy">全球股市与经济</span>
+      </div>
+    </div>
+
+    
+    <div class="market-table-wrap">
+      <table class="market-table">
+        <thead>
+          <tr>
+            <th data-zh="指数" data-en="Index">指数</th>
+            <th data-zh="全称" data-en="Name">全称</th>
+            <th data-zh="日期" data-en="Date">日期</th>
+            <th data-zh="价格" data-en="Price">价格</th>
+            <th data-zh="涨跌" data-en="Change">涨跌</th>
+            <th data-zh="涨跌幅" data-en="Change %">涨跌幅</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="name-cn" data-zh="标普500" data-en="S&P 500">标普500</td>
+            <td class="name-en">S&P 500</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">08/24</td>
+            <td class="val">7,652.86</td>
+            <td class="negative val">-21.51</td>
+            <td class="negative val">-0.28%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="纳斯达克" data-en="NASDAQ">纳斯达克</td>
+            <td class="name-en">NASDAQ</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">08/24</td>
+            <td class="val">25,980.19</td>
+            <td class="negative val">-200.27</td>
+            <td class="negative val">-0.76%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="道琼斯" data-en="Dow Jones">道琼斯</td>
+            <td class="name-en">Dow Jones</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">08/24</td>
+            <td class="val">53,417.16</td>
+            <td class="positive val">+140.15</td>
+            <td class="positive val">+0.26%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="富时100" data-en="FTSE 100">富时100</td>
+            <td class="name-en">FTSE 100</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">08/25</td>
+            <td class="val">10,877.37</td>
+            <td class="positive val">+23.07</td>
+            <td class="positive val">+0.21%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="德国DAX" data-en="DAX">德国DAX</td>
+            <td class="name-en">DAX</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">08/25</td>
+            <td class="val">26,308.33</td>
+            <td class="positive val">+201.73</td>
+            <td class="positive val">+0.77%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="日经225" data-en="Nikkei 225">日经225</td>
+            <td class="name-en">Nikkei 225</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">08/25</td>
+            <td class="val">65,856.43</td>
+            <td class="positive val">+328.34</td>
+            <td class="positive val">+0.50%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="上证指数" data-en="SSE Composite">上证指数</td>
+            <td class="name-en">SSE Composite</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">08/25</td>
+            <td class="val">3,889.44</td>
+            <td class="positive val">+7.44</td>
+            <td class="positive val">+0.19%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="恒生指数" data-en="Hang Seng">恒生指数</td>
+            <td class="name-en">Hang Seng</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">08/25</td>
+            <td class="val">25,511.10</td>
+            <td class="negative val">-6.23</td>
+            <td class="negative val">-0.02%</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+
+    
+    <div class="chart-wrap">
+      <p style="color:#888;font-size:12px;text-align:center;">[图表请在网站查看]</p>
+    </div>
+    
+
+    <div class="articles-list">
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-economy" data-zh="CNBC" data-en="CNBC">CNBC</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="The 'debasement trade' returns after Bessent bond maneuver. Crypto and gold are back in style">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Concern over the size and the cost of U.S. government spending has given new life to the debasement trade.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.cnbc.com/2026/08/25/debasement-trade-debt-gold-bitcoin-dollar.html" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-economy" data-zh="CNBC" data-en="CNBC">CNBC</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Oil drops 3% to 12-day low as Iran claims two-year plan to cope with Washington’s ‘economic D-Day’">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Investors shrugged off the latest developments in the U.S.-Iran war.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.cnbc.com/2026/08/25/oil-prices-iran-trump-hormuz.html" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://images.mktw.net/im-94082854" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-economy" data-zh="MarketWatch" data-en="MarketWatch">MarketWatch</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Why hire a warehouse worker for $30 per hour when a robot costs $10? JPMorgan expects booming humanoid demand.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="The U.S. manufacturing industry will turn to robots to fill open jobs, according to JPMorgan research.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.marketwatch.com/story/why-hire-a-warehouse-worker-for-30-per-hour-when-a-robot-costs-10-jpmorgan-expects-booming-humanoid-demand-9cc6ddf4?mod=mw_rss_topstories" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://images.mktw.net/im-44741253" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-economy" data-zh="MarketWatch" data-en="MarketWatch">MarketWatch</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Stick with value stocks until everyone starts talking about them — and they are still under the radar, this Wall Street firm says">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="BofA says investors continue to overlook value stocks, which work particularly well in a new era of higher interest rates and inflation.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.marketwatch.com/story/stick-with-value-stocks-until-everyone-is-talking-about-them-and-they-are-still-under-the-radar-this-wall-street-firm-says-598183de?mod=mw_rss_topstories" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <!-- ── AI & TECH ─────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">🤖</span>
+        <span class="section-title" data-zh="AI 与科技" data-en="AI & Technology">AI 与科技</span>
+      </div>
+      <span class="section-count">5<span data-zh=" 条" data-en=" stories"> 条</span></span>
+    </div>
+    <div class="articles-list">
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="MIT技术评论" data-en="MIT Tech Review">MIT技术评论</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Welcome to the spiderverse, a world measured through webs">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Counting the creatures in the world around us is critical for a raft of conservation efforts. It helps scientists gauge biodiversity, track migration, and spot invasive species. That census-taking, though, often requires humans to tabulate what they see, trap, or otherwise…">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.technologyreview.com/2026/08/25/1141750/welcome-to-spiderverse-arachnid-webs/" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://wp.technologyreview.com/wp-content/uploads/2026/08/map.jpg?w=840" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="MIT技术评论" data-en="MIT Tech Review">MIT技术评论</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="I spent a day at a robot “carnival” in Shanghai. Here’s what I saw.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Humanoid robots are having a moment in China. The popular machines are part of the country’s strategy to bring artificial intelligence into daily life. Embedding the technology into physical systems—an idea called embodied AI—was a key facet of China’s latest five-year plan, and…">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.technologyreview.com/2026/08/25/1141907/dispatch-shanghai-humanoid-robot-carnival/" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2022/03/browser-fingerprint-1000x648.jpeg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="Ars Technica" data-en="Ars Technica">Ars Technica</span>
+          <span class="article-date">Mon, 24 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Inaudible sounds used to fingerprint browsers catch AliExpress red-handed">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Is the technique outdated? Yes. Is it still creepy? Also yes.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://arstechnica.com/security/2026/08/aliexpress-caught-fingerprinting-visitors-after-sending-inaudible-sounds-to-browsers/" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2026/08/ftcms_8bad1114-5b27-4fc9-8102-1cb63e7f76fb-1152x648.jpeg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="Ars Technica" data-en="Ars Technica">Ars Technica</span>
+          <span class="article-date">Fri, 21 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Waymo doubles spending on lobbying in robotaxi battle with Uber">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Alphabet-owned company is seeking to persuade US regulators to clear a path for fully autonomous taxi services.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://arstechnica.com/cars/2026/08/waymo-doubles-spending-on-lobbying-in-robotaxi-battle-with-uber/" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK155_OPEN_AI_CVirginia_C-1.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="The Verge AI" data-en="The Verge AI">The Verge AI</span>
+          <span class="article-date">2026-08-25T05:15</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="OpenAI subpoenaed by Alabama AG over Hugging Face hack">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Alabama's attorney general issued a subpoena to OpenAI on Monday as part of an investigation into how one of its AI agents escaped a supposedly secure testing environment and autonomously hacked another company last month. The investigation seeks to determine whether OpenAI's…">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.theverge.com/ai-artificial-intelligence/984239/alabama-attorney-general-subpoena-openai-hugging-face-hack" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <!-- ── PAPERS ───────────────────────────────────────────────────── -->
+  
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">🔬</span>
+        <span class="section-title" data-zh="前沿论文精选" data-en="Top Research Papers">前沿论文精选</span>
+      </div>
+      <span class="section-count">5<span data-zh=" 篇" data-en=" papers"> 篇</span></span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-08-24</span>
+        <span class="paper-stat">▲ 148 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 1</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2608.23283" target="_blank">Apodex 1.1: Scaling Agentic Intelligence for Complex Work</a>
+      </div>
+      
+      <div class="paper-authors">Apodex Team, B. An, B. Li, B. Wang 等</div>
+      
+      
+      <div class="paper-summary" data-zh="之前的AI模型就像一个聪明的回答机器，能讨论问题但做不了实际工作——它不能真正打开文件、查找信息或运行代码来完成任务。Apodex 1.1通过两个方向来解决这个问题：一是扩展AI能接触的工具和环境（让它能真正操作各种文件和代码），二是教会AI像项目经理一样拆解复杂任务、分配给多个助手并整合结果。简单说，就是把AI从只会"纸上谈兵"升级成能"挽起袖子真干活"，这样它就能帮助我们完成数据分析、代码调试这类需要多步骤协作的复杂工作了。" data-en="General-purpose language models can reason and synthesize knowledge, but complex work also requires sustained interaction with files, information sources, and executable code, together with state main">之前的AI模型就像一个聪明的回答机器，能讨论问题但做不了实际工作——它不能真正打开文件、查找信息或运行代码来完成任务。Apodex 1.1通过两个方向来解决这个问题：一是扩展AI能接触的工具和环境（让它能真正操作各种文件和代码），二是教会AI像项目经理一样拆解复杂任务、分配给多个助手并整合结果。简单说，就是把AI从只会"纸上谈兵"升级成能"挽起袖子真干活"，这样它就能帮助我们完成数据分析、代码调试这类需要多步骤协作的复杂工作了。</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2608.23283" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2608.23283" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-08-24</span>
+        <span class="paper-stat">▲ 55 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 1</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2608.23189" target="_blank">EchoWM: Open and Enterable Omnimodal World Models</a>
+      </div>
+      
+      <div class="paper-authors">Songchun Zhang, Yaowei Li, Junhao Zhuang, Weiyang Jin 等</div>
+      
+      
+      <div class="paper-summary" data-zh="这篇论文训练了一个AI模型，能像导演一样同时生成视频、声音、音乐和对白，就像你在玩游戏时实时改变视角和移动方向，游戏世界能自动响应你的操作并生成对应的画面和声音。以前AI生成这些内容要么分开做（图像和声音各自为政），要么不能真正理解用户的操作意图；这篇论文通过统一处理相机运动意图和6维空间位置（左右前后上下加旋转），让模型学会了不同数据源的动作规律，最后用分阶段训练把所有能力融合到一起。这意味着未来可能做出更沉浸式的交互式虚拟世界，比如让AI自动生成可以随意探索的电影场景或游戏" data-en="We present EchoWM, an omnimodal world model for enterable generative media that responds to continuous navigation while jointly generating 720p video, environmental sound, music and speech. We organiz">这篇论文训练了一个AI模型，能像导演一样同时生成视频、声音、音乐和对白，就像你在玩游戏时实时改变视角和移动方向，游戏世界能自动响应你的操作并生成对应的画面和声音。以前AI生成这些内容要么分开做（图像和声音各自为政），要么不能真正理解用户的操作意图；这篇论文通过统一处理相机运动意图和6维空间位置（左右前后上下加旋转），让模型学会了不同数据源的动作规律，最后用分阶段训练把所有能力融合到一起。这意味着未来可能做出更沉浸式的交互式虚拟世界，比如让AI自动生成可以随意探索的电影场景或游戏</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2608.23189" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2608.23189" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-08-21</span>
+        <span class="paper-stat">▲ 47 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 1</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2608.20958" target="_blank">TLive-Omni: An Omni-Modal Understanding Model for E-Commerce Live Streaming</a>
+      </div>
+      
+      <div class="paper-authors">Yibo Hu, Yu Qian, Mao Gu, Yingfan Tao 等</div>
+      
+      
+      <div class="paper-summary" data-zh="这篇论文要解决的问题是：直播带货时，主播会同时说话、展示产品、打字介绍，这些信息混在一起很乱，目前的AI很难一下子理解所有这些不同来源的信息。他们开发了一个叫TLive-Omni的AI模型，就像给AI装了"全能翻译官"，能同时看视频、听声音、读文字，然后把这些信息整合到一个统一的理解空间里，还特别设计了一种方法把视频片段和对应的语音配对起来，解决了长时间直播中信息时间顺序混乱的问题。这样一来，AI就能更准确地理解直播内容，回答消费者的问题，帮助提高直播带货的效率和购物体验。" data-en="E-commerce live streaming requires omni-modal understanding of noisy, temporally extended streams, where product facts are distributed across speech, video frames, product images, overlaid text, and u">这篇论文要解决的问题是：直播带货时，主播会同时说话、展示产品、打字介绍，这些信息混在一起很乱，目前的AI很难一下子理解所有这些不同来源的信息。他们开发了一个叫TLive-Omni的AI模型，就像给AI装了"全能翻译官"，能同时看视频、听声音、读文字，然后把这些信息整合到一个统一的理解空间里，还特别设计了一种方法把视频片段和对应的语音配对起来，解决了长时间直播中信息时间顺序混乱的问题。这样一来，AI就能更准确地理解直播内容，回答消费者的问题，帮助提高直播带货的效率和购物体验。</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2608.20958" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2608.20958" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-08-17</span>
+        <span class="paper-stat">▲ 42 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 1</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2608.16812" target="_blank">Unlocking the Potential of Image Editing via Concept Scaling and Dense Supervision</a>
+      </div>
+      
+      <div class="paper-authors">Long Cui, Xiaoqian Liu, Qi Qin, Yi Xin 等</div>
+      
+      
+      <div class="paper-summary" data-zh="之前的图像编辑AI模型就像一个只学过几个简单动作的学生，很难处理复杂多样的编辑需求。这篇论文的厉害之处在于，它建立了一个包含1000多种细粒度编辑概念的超大数据库（相当于给AI学生编写了详细的教科书），还通过密集的监督信号让模型像学生反复做练习题一样高效学习。用通俗话说，就是从"教AI学泛泛的编辑技能"升级到"让AI掌握精细的编辑细节"，这样AI就能像专业修图师一样灵活处理各种图像编辑任务，对实际应用意义重大。" data-en="Existing image editing frameworks predominantly follow the training paradigm of text-to-image diffusion models. However, extending this paradigm to image editing highlights two inherent discrepancies,">之前的图像编辑AI模型就像一个只学过几个简单动作的学生，很难处理复杂多样的编辑需求。这篇论文的厉害之处在于，它建立了一个包含1000多种细粒度编辑概念的超大数据库（相当于给AI学生编写了详细的教科书），还通过密集的监督信号让模型像学生反复做练习题一样高效学习。用通俗话说，就是从"教AI学泛泛的编辑技能"升级到"让AI掌握精细的编辑细节"，这样AI就能像专业修图师一样灵活处理各种图像编辑任务，对实际应用意义重大。</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2608.16812" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2608.16812" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-08-24</span>
+        <span class="paper-stat">▲ 32 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 1</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2608.23035" target="_blank">MobilePA-Bench: Benchmarking Mobile Planner Agents on Complex Real-World Tasks</a>
+      </div>
+      
+      <div class="paper-authors">Yi Zhu, Xiongwei Wu, Qiyi Wang, Tingyu Qu 等</div>
+      
+      
+      <div class="paper-summary" data-zh="现在手机上越来越多AI助手在帮我们做事，但测试它们能力的方法有问题：有的只看它能不能点屏幕，忽视了后台任务和长期规划；有的只在纸上测试API（就像考试题而不是真实应用），没考虑实际运行时的限制。这篇论文建造了一个真实的测试环境，就像一个实际运作的手机模拟器，能让AI智能体真正操控应用、访问真实数据库、获得真实反馈，从而全面评估它的工具调用和规划能力。这样我们才能知道这些AI助手在真实生活中到底靠不靠谱。" data-en="As on-device LLM agents evolve into personal copilots, the mobile operating system has become a key testbed for this paradigm, making rigorous capability evaluation essential. Yet existing benchmarks ">现在手机上越来越多AI助手在帮我们做事，但测试它们能力的方法有问题：有的只看它能不能点屏幕，忽视了后台任务和长期规划；有的只在纸上测试API（就像考试题而不是真实应用），没考虑实际运行时的限制。这篇论文建造了一个真实的测试环境，就像一个实际运作的手机模拟器，能让AI智能体真正操控应用、访问真实数据库、获得真实反馈，从而全面评估它的工具调用和规划能力。这样我们才能知道这些AI助手在真实生活中到底靠不靠谱。</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2608.23035" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2608.23035" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+  
+
+  <!-- ── CRYPTO ────────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">₿</span>
+        <span class="section-title" data-zh="加密货币市场" data-en="Crypto Market">加密货币市场</span>
+      </div>
+    </div>
+
+    
+    <div class="crypto-grid">
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">BTC</div>
+            <div class="crypto-name" data-zh="比特币" data-en="比特币">比特币</div>
+          </div>
+          <div class="crypto-change positive">
+            +1.26%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $79,108
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $1,588B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">ETH</div>
+            <div class="crypto-name" data-zh="以太坊" data-en="以太坊">以太坊</div>
+          </div>
+          <div class="crypto-change negative">
+            -0.38%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $2,480
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $299B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">SOL</div>
+            <div class="crypto-name" data-zh="索拉纳" data-en="索拉纳">索拉纳</div>
+          </div>
+          <div class="crypto-change positive">
+            +3.29%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $98.67
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $58B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">BNB</div>
+            <div class="crypto-name" data-zh="币安币" data-en="币安币">币安币</div>
+          </div>
+          <div class="crypto-change negative">
+            -0.70%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $698.01
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $93B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">XRP</div>
+            <div class="crypto-name" data-zh="XRP" data-en="XRP">XRP</div>
+          </div>
+          <div class="crypto-change negative">
+            -0.68%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $1.48
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $93B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">ADA</div>
+            <div class="crypto-name" data-zh="卡尔达诺" data-en="卡尔达诺">卡尔达诺</div>
+          </div>
+          <div class="crypto-change negative">
+            -1.66%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $0.2189
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $8B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">DOGE</div>
+            <div class="crypto-name" data-zh="狗狗币" data-en="狗狗币">狗狗币</div>
+          </div>
+          <div class="crypto-change negative">
+            -1.67%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $0.0905
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $14B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">AVAX</div>
+            <div class="crypto-name" data-zh="雪崩" data-en="雪崩">雪崩</div>
+          </div>
+          <div class="crypto-change negative">
+            -0.15%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $7.52
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $3B</div>
+        
+      </div>
+      
+    </div>
+    
+    <div style="text-align:right;font-size:12px;color:var(--subtle);margin-top:-6px;margin-bottom:8px;">
+      <span data-zh="实时数据 · 更新于" data-en="Live data · Updated">实时数据 · 更新于</span> 2026-08-25 11:52 UTC
+    </div>
+    
+    
+
+    
+    <div class="chart-wrap">
+      <p style="color:#888;font-size:12px;text-align:center;">[图表请在网站查看]</p>
+    </div>
+    
+
+    <div class="articles-list">
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://uploads.panewslab.com/8d6ca5d3-4f14-42e5-b06c-e4f14aec9b00" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="PA News" data-en="PA News">PA News</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="CZ谈比特币投资：不建议卖房all-in，每月拿1%至10%收入定投主流加密资产" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">CZ谈比特币投资：不建议卖房all-in，每月拿1%至10%收入定投主流加密资产</div>
+        
+        <div class="article-summary" data-zh="「我不知道下一个引爆点是什么，但每天学一小时，你的思维方式会慢慢变。」" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">「我不知道下一个引爆点是什么，但每天学一小时，你的思维方式会慢慢变。」</div>
+        
+        <a href="https://www.panewslab.com/zh/articles/01a037bd-f4bd-7519-94e3-3095aa25f1c7" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://uploads.panewslab.com/5bee5808-d018-409d-9257-89c453c91b2b" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="PA News" data-en="PA News">PA News</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Arthur Hayes：$FLOP 空投将与测试网活动挂钩" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">Arthur Hayes：$FLOP 空投将与测试网活动挂钩</div>
+        
+        <div class="article-summary" data-zh="PANews 8月25日消息，BitMEX 联合创始人 Arthur Hayes 发帖称，代币 $FLOP 的空投将基于用户在测试网中的活动情况分配。测试网代币水龙头将部署在网站 Technocore.chat，仅供持有 DID 密钥的代理（agent）访问。Hayes 表示，关于具体规则和操作流程的详细说明将于稍后公布。" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">PANews 8月25日消息，BitMEX 联合创始人 Arthur Hayes 发帖称，代币 $FLOP 的空投将基于用户在测试网中的活动情况分配。测试网代币水龙头将部署在网站 Technocore.chat，仅供持有 DID 密钥的代理（agent）访问。Hayes 表示，关于具体规则和操作流程的详细说明将于稍后公布。</div>
+        
+        <a href="https://www.panewslab.com/zh/articles/01a038a8-7fa8-72d9-9b04-8291245a976e" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://uploads.panewslab.com/5bee5808-d018-409d-9257-89c453c91b2b" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="PA News" data-en="PA News">PA News</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="美国财政部成立量子就绪工作组，关注数字资产与新兴技术风险" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">美国财政部成立量子就绪工作组，关注数字资产与新兴技术风险</div>
+        
+        <div class="article-summary" data-zh="PANews 8月25日消息，据美国财政部官网公告，美国财政部宣布启动量子就绪工作组。该工作组是一个公私合作机制，将推动美国金融业以有序且具备运营韧性的方式向抗量子技术迁移，并衔接七国集团（G7）网络专家组关于后量子密码迁移的路线图。 工作组将通过三条工作线开展工作，分别为“行业协同与后量子密码迁移”“第三方与供应商准备度”以及“数字资产和新兴技术风险”。其将汇集政府、金融机构、金融市场基础设施、技术供应商及其他私营部门参与者，重点识别关键依赖、提高密码敏捷性和互操作性、强化关键金融基础设施保护，并应对第三方依赖和数字资产相关的实施挑战。" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">PANews 8月25日消息，据美国财政部官网公告，美国财政部宣布启动量子就绪工作组。该工作组是一个公私合作机制，将推动美国金融业以有序且具备运营韧性的方式向抗量子技术迁移，并衔接七国集团（G7）网络专家组关于后量子密码迁移的路线图。 工作组将通过三条工作线开展工作，分别为“行业协同与后量子密码迁移”“第三方与供应商准备度”以及“数字资产和新兴技术风险”。其将汇集政府、金融机构、金融市场基础设施、技术供应商及其他私营部门参与者，重点识别关键依赖、提高密码敏捷性和互操作性、强化关键金融基础设施保护，并应对第三方依赖和数字资产相关的实施挑战。</div>
+        
+        <a href="https://www.panewslab.com/zh/articles/01a0389d-25c5-73ac-afbc-0474a32fef95" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://uploads.panewslab.com/5bee5808-d018-409d-9257-89c453c91b2b" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="PA News" data-en="PA News">PA News</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Gate 闪兑幸运抽第二十二期活动，交易 $1 赢取 ETH 奖励" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">Gate 闪兑幸运抽第二十二期活动，交易 $1 赢取 ETH 奖励</div>
+        
+        <div class="article-summary" data-zh="PANews 8月25日消息，据官方消息，Gate 于 8 月 24 日 18:00 至 8 月 31 日 18:00（UTC+8）推出闪兑幸运抽第二十二期活动。活动期间，用户完成指定闪兑交易任务即可逐步解锁抽奖机会，有机会赢取 ETH、双币理财体验金及最高 200 USDT 现金奖励；历史首次完成不少于 1 USDT 闪兑即可获得 1 次抽奖机会，每日完成 50 USDT 闪兑交易量还可获得 1 次抽奖机会。累计闪兑交易量每达到 80,000 USDT，可获得 50 USDT 现金奖励，单人最高可获 200 USDT。 此外，Gate…" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">PANews 8月25日消息，据官方消息，Gate 于 8 月 24 日 18:00 至 8 月 31 日 18:00（UTC+8）推出闪兑幸运抽第二十二期活动。活动期间，用户完成指定闪兑交易任务即可逐步解锁抽奖机会，有机会赢取 ETH、双币理财体验金及最高 200 USDT 现金奖励；历史首次完成不少于 1 USDT 闪兑即可获得 1 次抽奖机会，每日完成 50 USDT 闪兑交易量还可获得 1 次抽奖机会。累计闪兑交易量每达到 80,000 USDT，可获得 50 USDT 现金奖励，单人最高可获 200 USDT。 此外，Gate…</div>
+        
+        <a href="https://www.panewslab.com/zh/articles/01a0388d-9d41-75fc-9eed-bbd771a56adb" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://cdn.sanity.io/images/s3y3vcno/production/65b0740574b4859e756d0a51944a33ea6685a86b-2592x1728.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="CoinDesk" data-en="CoinDesk">CoinDesk</span>
+          <span class="article-date">Tue, 25 Aug 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Las Vegas businessman convicted in $24 million 'AI supercomputer' crypto Ponzi scheme">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.coindesk.com/policy/2026/08/25/crypto-supercomputer-ponzi-schemer-convicted-faces-up-to-280-years-in-prison" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+
+</div>
+
+<!-- ── FOOTER ────────────────────────────────────────────────────────── -->
+<div class="footer">
+  <div class="footer-inner">
+    <div class="footer-title">
+      <span data-zh="每日全球要闻快报" data-en="Daily Global News Digest">每日全球要闻快报</span>
+      &nbsp;·&nbsp;
+      <span class="date-zh">2026年8月25日 星期二</span>
+      <span class="date-en" style="display:none">Tuesday, August 25, 2026</span>
+    </div>
+    <div class="footer-sources">
+      <span data-zh="数据来源：" data-en="Sources: ">数据来源：</span>Reuters · BBC · NY Times · The Guardian · MIT Tech Review · Ars Technica · PA News · CoinDesk · The Block · Blockworks · The Defiant · CoinGecko · yfinance
+    </div>
+    <div class="footer-disclaimer">
+      <span data-zh="本报告由自动化程序生成，仅供参考，不构成投资建议。" data-en="Auto-generated for informational purposes only. Not investment advice.">本报告由自动化程序生成，仅供参考，不构成投资建议。</span>
+    </div>
+  </div>
+</div>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[data-zh]').forEach(function(el) {
+    el.innerHTML = lang==='en' ? (el.getAttribute('data-en')||el.getAttribute('data-zh')) : el.getAttribute('data-zh');
+  });
+  document.querySelectorAll('.date-zh').forEach(function(el){ el.style.display=lang==='en'?'none':''; });
+  document.querySelectorAll('.date-en').forEach(function(el){ el.style.display=lang==='en'?'':'none'; });
+  document.getElementById('btn-zh').classList.toggle('active', lang==='zh');
+  document.getElementById('btn-en').classList.toggle('active', lang==='en');
+  try { localStorage.setItem('news_lang', lang); } catch(e){}
+}
+(function(){ try{ var s=localStorage.getItem('news_lang'); if(s==='en') setLang('en'); }catch(e){} })();
+</script>
+</body>
+</html>
