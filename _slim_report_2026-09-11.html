@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Brief — 2026年9月11日 星期五</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:         #f0f2f5;
+  --surface:    #ffffff;
+  --surface2:   #f8f9fc;
+  --border:     #e8eaed;
+  --border2:    #d1d5db;
+  --text:       #111827;
+  --muted:      #6b7280;
+  --subtle:     #9ca3af;
+  --accent:     #1d4ed8;
+  --accent-bg:  #eff6ff;
+  --green:      #059669;
+  --green-bg:   #f0fdf4;
+  --red:        #dc2626;
+  --red-bg:     #fef2f2;
+  --orange:     #ea580c;
+  --orange-bg:  #fff7ed;
+  --purple:     #7c3aed;
+  --purple-bg:  #f5f3ff;
+
+  --world-c:  #dc2626; --world-bg:  #fef2f2; --world-bd:  #fecaca;
+  --ai-c:     #7c3aed; --ai-bg:     #f5f3ff; --ai-bd:     #ddd6fe;
+  --crypto-c: #d97706; --crypto-bg: #fffbeb; --crypto-bd: #fde68a;
+  --eco-c:    #059669; --eco-bg:    #f0fdf4; --eco-bd:    #a7f3d0;
+  --paper-c:  #0d9488; --paper-bg:  #f0fdfa; --paper-bd:  #99f6e4;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter','Noto Sans SC','Microsoft YaHei',-apple-system,sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── LANG TOGGLE ──────────────────────────────────── */
+.lang-toggle {
+  position: fixed; top: 16px; right: 20px; z-index: 999;
+  display: flex; gap: 2px;
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 8px; padding: 3px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.lang-toggle button {
+  background: transparent; border: none;
+  color: var(--muted); font-size: 12px; font-weight: 600;
+  padding: 4px 14px; border-radius: 6px; cursor: pointer;
+  letter-spacing: .5px; transition: all .15s; font-family: inherit;
+}
+.lang-toggle button.active { background: var(--accent); color: #fff; }
+@media print { .lang-toggle { display: none; } }
+
+/* ── HEADER ───────────────────────────────────────── */
+.header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0 22px;
+}
+.header-inner {
+  max-width: 1080px; margin: 0 auto; padding: 0 32px;
+  display: flex; align-items: flex-end; justify-content: space-between;
+  flex-wrap: wrap; gap: 16px;
+}
+.header-brand {}
+.header-eyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 6px;
+}
+.header-title {
+  font-size: 38px; font-weight: 700; color: var(--text);
+  letter-spacing: -0.5px; line-height: 1.15;
+}
+.header-title .accent { color: var(--accent); }
+.header-date {
+  text-align: right;
+}
+.header-date .date-main {
+  font-size: 17px; font-weight: 600; color: var(--text); display: block;
+}
+.header-date .date-sub {
+  font-size: 15px; color: var(--muted); margin-top: 2px; display: block;
+}
+
+/* ── LAYOUT ───────────────────────────────────────── */
+.container { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+
+/* ── KEY POINTS ───────────────────────────────────── */
+.keypoints {
+  margin: 28px 0 0;
+  background: var(--accent-bg);
+  border: 1px solid #bfdbfe;
+  border-left: 4px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  padding: 20px 26px;
+}
+.keypoints-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 12px;
+}
+.keypoints ul { list-style: none; }
+.keypoints li {
+  font-size: 17px; color: var(--text);
+  padding: 5px 0 5px 16px;
+  position: relative;
+  border-bottom: 1px solid #dbeafe;
+}
+.keypoints li:last-child { border-bottom: none; padding-bottom: 0; }
+.keypoints li::before {
+  content: ''; position: absolute; left: 0; top: 13px;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+}
+
+/* ── SECTION ──────────────────────────────────────── */
+.section { margin-top: 40px; }
+.section-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 18px; padding-bottom: 14px;
+  border-bottom: 2px solid var(--border);
+}
+.section-left { display: flex; align-items: center; gap: 10px; }
+.section-icon { font-size: 22px; }
+.section-title { font-size: 26px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+.section-count { font-size: 15px; color: var(--muted); }
+
+/* ── ARTICLE CARD ─────────────────────────────────── */
+.articles-list { display: flex; flex-direction: column; gap: 14px; }
+.article-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 20px 22px;
+  display: flex; gap: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+  page-break-inside: avoid;
+}
+.article-img-wrap {
+  flex: 0 0 168px; height: 112px;
+  border-radius: 8px; overflow: hidden;
+  background: var(--surface2);
+}
+.article-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.article-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.article-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+.badge {
+  display: inline-block; font-size: 11px; font-weight: 600;
+  letter-spacing: .3px; padding: 2px 10px; border-radius: 20px;
+  border: 1px solid;
+}
+.badge-world  { background: var(--world-bg);  color: var(--world-c);  border-color: var(--world-bd); }
+.badge-ai     { background: var(--ai-bg);     color: var(--ai-c);     border-color: var(--ai-bd); }
+.badge-crypto { background: var(--crypto-bg); color: var(--crypto-c); border-color: var(--crypto-bd); }
+.badge-economy{ background: var(--eco-bg);    color: var(--eco-c);    border-color: var(--eco-bd); }
+.badge-paper  { background: var(--paper-bg);  color: var(--paper-c);  border-color: var(--paper-bd); }
+
+/* ── PAPER CARD ───────────────────────────────────────── */
+.paper-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--paper-c);
+  padding: 20px 22px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+  page-break-inside: avoid;
+}
+.paper-title {
+  font-size: 18px; font-weight: 700; color: var(--text);
+  line-height: 1.45; letter-spacing: -0.1px; margin-bottom: 8px;
+}
+.paper-title a { color: var(--text); }
+.paper-title a:hover { color: var(--paper-c); text-decoration: none; }
+.paper-authors { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+.paper-summary { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 10px; }
+.paper-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.paper-stat {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 12px; font-weight: 600; color: var(--paper-c);
+  background: var(--paper-bg); border: 1px solid var(--paper-bd);
+  border-radius: 20px; padding: 2px 10px;
+}
+.paper-links { display: flex; gap: 12px; }
+.paper-links a { font-size: 13px; font-weight: 500; color: var(--paper-c); }
+.paper-links a:hover { text-decoration: underline; }
+
+.article-date { font-size: 12px; color: var(--subtle); }
+.article-title {
+  font-size: 20px; font-weight: 700; color: var(--text);
+  line-height: 1.45; letter-spacing: -0.1px;
+}
+.article-summary { font-size: 16px; color: var(--muted); line-height: 1.7; margin-top: 4px; }
+.read-more { font-size: 14px; color: var(--accent); font-weight: 500; margin-top: 4px; }
+
+/* ── CRYPTO GRID ──────────────────────────────────── */
+.crypto-grid {
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 12px;
+  margin-bottom: 20px;
+}
+.crypto-card {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 12px; padding: 16px 18px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+.crypto-top {
+  display: flex; justify-content: space-between;
+  align-items: flex-start; margin-bottom: 10px;
+}
+.crypto-symbol { font-size: 15px; font-weight: 700; color: var(--text); }
+.crypto-name   { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.crypto-change { font-size: 13px; font-weight: 700; text-align: right; line-height: 1.3; }
+.crypto-change small { display: block; font-size: 10px; font-weight: 400; color: var(--subtle); }
+.crypto-price  {
+  font-size: 20px; font-weight: 700; color: var(--text);
+  font-variant-numeric: tabular-nums; letter-spacing: -0.5px;
+}
+.crypto-mcap { font-size: 11px; color: var(--subtle); margin-top: 6px; }
+.positive { color: var(--green); }
+.negative { color: var(--red); }
+
+/* ── CHART ────────────────────────────────────────── */
+.chart-wrap {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden; margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+.chart-wrap img { width: 100%; display: block; }
+
+/* ── MARKET TABLE ─────────────────────────────────── */
+.market-table-wrap {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden; margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+.market-table { width: 100%; border-collapse: collapse; }
+.market-table thead { background: var(--surface2); }
+.market-table th {
+  font-size: 11px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--muted);
+  padding: 12px 18px; text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.market-table td { padding: 13px 18px; border-bottom: 1px solid var(--border); font-size: 15px; }
+.market-table tr:last-child td { border-bottom: none; }
+.market-table tr:hover td { background: var(--surface2); }
+.market-table .name-cn { font-weight: 600; }
+.market-table .name-en { font-size: 13px; color: var(--muted); }
+.market-table .val { font-variant-numeric: tabular-nums; font-weight: 500; }
+
+/* ── FOOTER ───────────────────────────────────────── */
+.footer {
+  margin-top: 56px; padding: 32px 0;
+  border-top: 1px solid var(--border);
+  background: #fff;
+}
+.footer-inner { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+.footer-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+.footer-sources { font-size: 12px; color: var(--muted); line-height: 1.8; }
+.footer-disclaimer { font-size: 11px; color: var(--subtle); margin-top: 6px; }
+</style>
+</head>
+<body>
+
+<!-- ── LANG TOGGLE ──────────────────────────────────────────────────── -->
+<div class="lang-toggle">
+  <button id="btn-zh" class="active" onclick="setLang('zh')">中文</button>
+  <button id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+
+<!-- ── TOPNAV ──────────────────────────────────────────────────────── -->
+<div style="position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);
+  backdrop-filter:blur(12px);border-bottom:1.5px solid var(--border);padding:0 20px">
+  <div style="max-width:900px;margin:0 auto;display:flex;align-items:center;
+    justify-content:space-between;height:52px;gap:12px">
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="font-size:20px">🌏</span>
+      <span style="font-size:17px;font-weight:900;color:var(--text)">AI<span style="color:var(--accent)">情报</span>日报</span>
+    </div>
+    <nav style="display:flex;gap:8px">
+      <a href="./" style="padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;
+        background:var(--accent);color:#fff;border:1.5px solid var(--accent);text-decoration:none">
+        📰 每日新闻
+      </a>
+      <a href="./kol/" style="padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;
+        color:var(--muted);border:1.5px solid var(--border);text-decoration:none">
+        🔭 KOL洞察
+      </a>
+    </nav>
+  </div>
+</div>
+
+<!-- ── HEADER ───────────────────────────────────────────────────────── -->
+<div class="header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="header-eyebrow" data-zh="每日全球要闻快报" data-en="Daily Global Intelligence Brief">每日全球要闻快报</div>
+      <div class="header-title">
+        <span data-zh="全球" data-en="Global ">全球</span><span class="accent" data-zh="要闻" data-en="News">要闻</span><span data-zh=" 快报" data-en=" Brief"> 快报</span>
+      </div>
+    </div>
+    <div class="header-date">
+      <span class="date-main date-zh">2026年9月11日 星期五</span>
+      <span class="date-main date-en" style="display:none">Friday, September 11, 2026</span>
+      <span class="date-sub">
+        <span data-zh="洛杉矶时间" data-en="Los Angeles Time">洛杉矶时间</span>
+        08:06
+        <span data-zh="发布" data-en="Published">发布</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ── KEY POINTS ───────────────────────────────────────────────── -->
+  <div class="keypoints">
+    <div class="keypoints-label" data-zh="今日要点" data-en="Today's Highlights">今日要点</div>
+    <ul>
+      
+      <li data-zh="【全球】卢森堡首相吕克·弗里登：我对在欧洲赢得选举的极端分子感到非常担心" data-en="[World] I'm extremely worried by extremists that win elections in Europe: Luxembourg's PM Luc Frieden">【全球】卢森堡首相吕克·弗里登：我对在欧洲赢得选举的极端分子感到非常担心</li>
+      
+      <li data-zh="【AI】Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="[AI] The Download: biotech’s future and cheaper, cleaner steel">【AI】Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</li>
+      
+      <li data-zh="【加密】BTC ▲1.8% | ETH ▲6.7%（24h 涨跌）" data-en="[Crypto] BTC ▲1.8% | ETH ▲6.7% (24h change)">【加密】BTC ▲1.8% | ETH ▲6.7%（24h 涨跌）</li>
+      
+      <li data-zh="【股市】标普500 ▲0.94%，报 7,663.38 点" data-en="[Markets] S&P 500 ▲0.94%, at 7,663.38">【股市】标普500 ▲0.94%，报 7,663.38 点</li>
+      
+      <li data-zh="【经济】Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="[Economy] Here’s the inflation breakdown for August 2026 — in one chart">【经济】Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</li>
+      
+    </ul>
+  </div>
+
+  <!-- ── WORLD NEWS ────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">🌐</span>
+        <span class="section-title" data-zh="全球重大事件" data-en="Major World Events">全球重大事件</span>
+      </div>
+      <span class="section-count">6<span data-zh=" 条" data-en=" stories"> 条</span></span>
+    </div>
+    <div class="articles-list">
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://s.france24.com/media/display/2977ce88-ac63-11f1-800d-005056bf30b7/w:1024/p:16x9/Frieden.png" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="法国24" data-en="France 24">法国24</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="卢森堡首相吕克·弗里登：我对在欧洲赢得选举的极端分子感到非常担心" data-en="I'm extremely worried by extremists that win elections in Europe: Luxembourg's PM Luc Frieden">卢森堡首相吕克·弗里登：我对在欧洲赢得选举的极端分子感到非常担心</div>
+        
+        <div class="article-summary" data-zh="如今，“欧洲战略自主”是布鲁塞尔和欧盟各国首都的流行语。这对太空政策意味着什么？这是我们在卢森堡首相吕克·弗里登访问巴黎参加国际会议期间向他提出的中心观点之一……" data-en=""European strategic autonomy" is a buzz phrase in Brussels and in EU capitals these days. What does it mean for space policy? That was one of the central points that we raised with the Prime Minister of Luxembourg, Luc Frieden, during his visit to Paris for the International…">如今，“欧洲战略自主”是布鲁塞尔和欧盟各国首都的流行语。这对太空政策意味着什么？这是我们在卢森堡首相吕克·弗里登访问巴黎参加国际会议期间向他提出的中心观点之一……</div>
+        
+        <a href="https://www.france24.com/en/tv-shows/talking-europe/20260911-i-m-extremely-worried-by-extremists-that-win-elections-in-europe-luxembourg-s-pm-luc-frieden" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://s.france24.com/media/display/266458d2-adef-11f1-8177-005056bf30b7/w:1024/p:16x9/EN-20260911-160847-162700-CS.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="法国24" data-en="France 24">法国24</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="REPLAY: Trump speaks at 9/11 25th anniversary ceremony at the Pentagon">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="President Donald Trump vowed Friday that the United States would never forget the September 11, 2001 attacks and would continue to "fight," as he marked the 25th anniversary in a ceremony at the Pentagon. "Today we renew the sacred oath that we first swore in their names a…">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.france24.com/en/video/20260911-replay-trump-speaks-at-9-11-25th-anniversary-ceremony-at-the-pentagon" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="德国之声" data-en="Deutsche Welle">德国之声</span>
+          
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="India's BRICS strategy tested with Xi, Putin set to visit">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="New Delhi's "America Plus" approach sees India deepening its ties with China and Russia, while also trying to keep BRICS from turning into an anti-Western platform.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.dw.com/en/india-s-brics-strategy-tested-with-xi-putin-set-to-visit/a-79231879?maca=en-rss-en-world-4025-rdf" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="德国之声" data-en="Deutsche Welle">德国之声</span>
+          
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Uber leaves two key African markets — and their drivers in despair">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Uber's departure from Nigeria and Uganda has left countless customers high and dry. But what about drivers? With fuel prices, maintenance and other operating costs rising, many say they're struggling to make a living.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.dw.com/en/uber-leaves-two-key-african-markets-and-their-drivers-in-despair/a-79232189?maca=en-rss-en-world-4025-rdf" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3746x2498+0+0/resize/3746x2498!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5d%2F4f%2Ff5ecab764bd3ba1267b758e5492d%2Fus-canada-bridge.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="NPR新闻" data-en="NPR News">NPR新闻</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="The U.S.-Canada trade war is creating a headache for auto-parts makers">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="For decades, the U.S. and Canadian auto supply chains have been tightly woven together. The trade war is threatening to unravel a complex system.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.npr.org/2026/09/11/nx-s1-5961530/canada-trade-war-auto-parts-supply-chain" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6720x4480+0+0/resize/6720x4480!/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F6f%2F0a%2Ffdf525e34ee2bf4d5e8bddc334ba%2Fap26253328596062.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-world" data-zh="NPR新闻" data-en="NPR News">NPR新闻</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Why gains by Iran-backed Houthis in Yemen could push gas prices even higher">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="A Houthi advance along Yemen's Red Sea coast could help push gas prices up even more as the Iran-backed group also launches attacks on Saudi Arabia's oil facilities.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.npr.org/2026/09/11/nx-s1-5966379/houthi-gains-gas-prices" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <!-- ── ECONOMY ───────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">📊</span>
+        <span class="section-title" data-zh="全球股市与经济" data-en="Markets & Economy">全球股市与经济</span>
+      </div>
+    </div>
+
+    
+    <div class="market-table-wrap">
+      <table class="market-table">
+        <thead>
+          <tr>
+            <th data-zh="指数" data-en="Index">指数</th>
+            <th data-zh="全称" data-en="Name">全称</th>
+            <th data-zh="日期" data-en="Date">日期</th>
+            <th data-zh="价格" data-en="Price">价格</th>
+            <th data-zh="涨跌" data-en="Change">涨跌</th>
+            <th data-zh="涨跌幅" data-en="Change %">涨跌幅</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="name-cn" data-zh="标普500" data-en="S&P 500">标普500</td>
+            <td class="name-en">S&P 500</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">09/11</td>
+            <td class="val">7,663.38</td>
+            <td class="positive val">+71.68</td>
+            <td class="positive val">+0.94%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="纳斯达克" data-en="NASDAQ">纳斯达克</td>
+            <td class="name-en">NASDAQ</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">09/11</td>
+            <td class="val">26,372.67</td>
+            <td class="positive val">+290.95</td>
+            <td class="positive val">+1.12%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="道琼斯" data-en="Dow Jones">道琼斯</td>
+            <td class="name-en">Dow Jones</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">09/11</td>
+            <td class="val">52,541.24</td>
+            <td class="positive val">+477.14</td>
+            <td class="positive val">+0.92%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="富时100" data-en="FTSE 100">富时100</td>
+            <td class="name-en">FTSE 100</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">09/11</td>
+            <td class="val">10,647.62</td>
+            <td class="positive val">+38.72</td>
+            <td class="positive val">+0.36%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="德国DAX" data-en="DAX">德国DAX</td>
+            <td class="name-en">DAX</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">09/11</td>
+            <td class="val">25,525.34</td>
+            <td class="positive val">+164.19</td>
+            <td class="positive val">+0.65%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="日经225" data-en="Nikkei 225">日经225</td>
+            <td class="name-en">Nikkei 225</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">09/10</td>
+            <td class="val">65,270.95</td>
+            <td class="positive val">+128.17</td>
+            <td class="positive val">+0.20%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="上证指数" data-en="SSE Composite">上证指数</td>
+            <td class="name-en">SSE Composite</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">09/11</td>
+            <td class="val">3,888.11</td>
+            <td class="negative val">-46.29</td>
+            <td class="negative val">-1.18%</td>
+          </tr>
+          
+          <tr>
+            <td class="name-cn" data-zh="恒生指数" data-en="Hang Seng">恒生指数</td>
+            <td class="name-en">Hang Seng</td>
+            <td class="val" style="color:var(--muted);font-size:13px;">09/11</td>
+            <td class="val">24,805.63</td>
+            <td class="negative val">-148.84</td>
+            <td class="negative val">-0.60%</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+
+    
+    <div class="chart-wrap">
+      <p style="color:#888;font-size:12px;text-align:center;">[图表请在网站查看]</p>
+    </div>
+    
+
+    <div class="articles-list">
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-economy" data-zh="CNBC" data-en="CNBC">CNBC</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Here’s the inflation breakdown for August 2026 — in one chart">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Inflation remained stubbornly high in August, largely on the back of higher energy prices amid the Iran war, economists said.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.cnbc.com/2026/09/11/cpi-inflation-breakdown-august-2026.html" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-economy" data-zh="CNBC" data-en="CNBC">CNBC</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="25 years after 9/11, the U.S. starts rolling back travel restrictions, from liquids to gate access">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Years after 9/11, the U.S. government is walking back some security screenings as threats and technology evolve.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.cnbc.com/2026/09/11/9/11-anniversary-air-travel.html" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://images.mktw.net/im-51979575" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-economy" data-zh="MarketWatch" data-en="MarketWatch">MarketWatch</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="‘I’m the executor’: My two siblings and I inherited an IRA. Can we just cash it out?">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="“Am I required to create three new inherited IRAs so that the firm can divide it equally?”">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.marketwatch.com/story/im-the-executor-my-two-siblings-and-i-inherited-an-ira-can-we-just-cash-it-out-dafc5b8d?mod=mw_rss_topstories" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://images.mktw.net/im-82750709" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-economy" data-zh="MarketWatch" data-en="MarketWatch">MarketWatch</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="All the ways $6 diesel and rising gas prices are about to make your life more expensive — from commuting to grocery shopping">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="“Diesel touches everything in the economy,” one analyst says.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.marketwatch.com/story/all-the-ways-record-high-diesel-and-rising-gas-prices-are-about-to-make-your-life-more-expensive-from-commuting-to-grocery-shopping-2083fec3?mod=mw_rss_topstories" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <!-- ── AI & TECH ─────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">🤖</span>
+        <span class="section-title" data-zh="AI 与科技" data-en="AI & Technology">AI 与科技</span>
+      </div>
+      <span class="section-count">5<span data-zh=" 条" data-en=" stories"> 条</span></span>
+    </div>
+    <div class="articles-list">
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://wp.technologyreview.com/wp-content/uploads/2026/04/rice-bowl-claw.jpg?fit=2128,1196" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="MIT技术评论" data-en="MIT Tech Review">MIT技术评论</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="The Download: biotech’s future and cheaper, cleaner steel">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Meet the under-35s shaping the future of biotech Every year, MIT Technology Review puts together our 35 Innovators Under 35, a list of some…">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.technologyreview.com/2026/09/11/1143879/the-download-biotech-future-cheaper-cleaner-steel/" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="MIT技术评论" data-en="MIT Tech Review">MIT技术评论</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="认识塑造生物技术未来的 35 岁以下人士" data-en="Meet the under-35s shaping the future of biotech">认识塑造生物技术未来的 35 岁以下人士</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Every year, MIT Technology Review puts together a list of some of the brightest and best young minds working across science and technology. Our 35 Innovators Under 35 are the ones to watch—people whose research and technical work stands to shape the future of their fields. This…">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.technologyreview.com/2026/09/11/1143834/meet-the-under-35s-shaping-the-future-of-biotech/" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/malware-infected-laptop-1152x648.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="Ars Technica" data-en="Ars Technica">Ars Technica</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="ClickFix attacks infecting PCs and Macs are going viral">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Simplicity—combined with the difficulty of getting stuff done—makes ClickFix ideal.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://arstechnica.com/security/2026/09/clickfix-attacks-infecting-pcs-and-macs-are-going-viral/" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://cdn.arstechnica.net/wp-content/uploads/2023/09/code-vulnerability-security-1000x648.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="Ars Technica" data-en="Ars Technica">Ars Technica</span>
+          <span class="article-date">Wed, 09 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="四个团体被发现使用相同的 Chrome 和 Windows 漏洞利用工具包" data-en="Four groups caught using the same Chrome and Windows exploit kit">四个团体被发现使用相同的 Chrome 和 Windows 漏洞利用工具包</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="A patch gap and the hastened pace of AI-based vulnerability discovery are likely contributors.">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://arstechnica.com/information-technology/2026/09/4-groups-caught-using-the-same-chrome-and-windows-exploit-kit/" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/IMG_2464.png?quality=90&#038;strip=all&#038;crop=0,0,100,100" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-ai" data-zh="The Verge AI" data-en="The Verge AI">The Verge AI</span>
+          <span class="article-date">2026-09-10T17:25</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Slack can now vibe-code interactive charts and reports inside chats">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <div class="article-summary" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="A new feature coming to Slack will allow you to build interactive reports, polls, dashboards, presentations, microsites, and other tools directly inside a chat. With Slackforce Surfaces, you can describe to Slackbot what you need, and it will use AI to gather information from…">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.theverge.com/tech/989853/slackforce-surfaces-launch" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <!-- ── PAPERS ───────────────────────────────────────────────────── -->
+  
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">🔬</span>
+        <span class="section-title" data-zh="前沿论文精选" data-en="Top Research Papers">前沿论文精选</span>
+      </div>
+      <span class="section-count">5<span data-zh=" 篇" data-en=" papers"> 篇</span></span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-08-29</span>
+        <span class="paper-stat">▲ 434 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 2</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2608.12564" target="_blank">Scaling Automatic Research Agents via World Models</a>
+      </div>
+      
+      <div class="paper-authors">Xiyuan Yang, Sheikh Sarwar, Jingru Cheng, Zhan Shi 等</div>
+      
+      
+      <div class="paper-summary" data-zh="Automating empirical research is a long-standing direction of AI. Recent automatic research (AutoResearch) agents bring this goal within reach, as modern LLMs show the capability to independently impl" data-en="Automating empirical research is a long-standing direction of AI. Recent automatic research (AutoResearch) agents bring this goal within reach, as modern LLMs show the capability to independently impl">Automating empirical research is a long-standing direction of AI. Recent automatic research (AutoResearch) agents bring this goal within reach, as modern LLMs show the capability to independently impl</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2608.12564" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2608.12564" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-09-09</span>
+        <span class="paper-stat">▲ 127 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 1</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2609.10715" target="_blank">NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction</a>
+      </div>
+      
+      <div class="paper-authors">NCP Team, Jiaqi Cao, Chiyu Chen, Shuang Cheng 等</div>
+      
+      
+      <div class="paper-summary" data-zh="We introduce NCP-ArchPreview, a latent-space language model that pushes autoregressive pretraining beyond standard next-token prediction (NTP). Alongside NTP, the model learns through Next Concept Pre" data-en="We introduce NCP-ArchPreview, a latent-space language model that pushes autoregressive pretraining beyond standard next-token prediction (NTP). Alongside NTP, the model learns through Next Concept Pre">We introduce NCP-ArchPreview, a latent-space language model that pushes autoregressive pretraining beyond standard next-token prediction (NTP). Alongside NTP, the model learns through Next Concept Pre</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2609.10715" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2609.10715" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-09-10</span>
+        <span class="paper-stat">▲ 99 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 1</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2609.11929" target="_blank">SenseNova-U1.5: Towards Native Unified Visual Intelligence</a>
+      </div>
+      
+      <div class="paper-authors">Haiwen Diao, Jiahao Wang, Chenjing Ding, Hanming Deng 等</div>
+      
+      
+      <div class="paper-summary" data-zh="We launch SenseNova-U1.5, an 8B-MoT native unified multimodal model that understands, reasons about, and generates visual content within an encoder-free and VAE-free architecture. We strengthen its vi" data-en="We launch SenseNova-U1.5, an 8B-MoT native unified multimodal model that understands, reasons about, and generates visual content within an encoder-free and VAE-free architecture. We strengthen its vi">We launch SenseNova-U1.5, an 8B-MoT native unified multimodal model that understands, reasons about, and generates visual content within an encoder-free and VAE-free architecture. We strengthen its vi</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2609.11929" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2609.11929" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-09-08</span>
+        <span class="paper-stat">▲ 89 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 2</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2609.08572" target="_blank">AgentGrad: Intervention-guided Prompt Optimization for Multi Agent Systems</a>
+      </div>
+      
+      <div class="paper-authors">Jaewon Chu, Jinwoo Seo, Jaewon Cho, Jeehye Na 等</div>
+      
+      
+      <div class="paper-summary" data-zh="Large language model (LLM)-based multi-agent systems (MAS) achieve strong performance by employing specialized multiple agents, yet their performance depends on the prompt design of each agent. For MA" data-en="Large language model (LLM)-based multi-agent systems (MAS) achieve strong performance by employing specialized multiple agents, yet their performance depends on the prompt design of each agent. For MA">Large language model (LLM)-based multi-agent systems (MAS) achieve strong performance by employing specialized multiple agents, yet their performance depends on the prompt design of each agent. For MA</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2609.08572" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2609.08572" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    <div class="paper-card">
+      <div class="paper-meta">
+        <span class="badge badge-paper">arXiv · 2026-09-08</span>
+        <span class="paper-stat">▲ 52 <span data-zh="热度" data-en="upvotes">热度</span></span>
+        <span class="paper-stat">💬 2</span>
+      </div>
+      <div class="paper-title">
+        <a href="https://arxiv.org/abs/2609.08084" target="_blank">Marigold V2: Revisiting Diffusion Transformers for Monocular Depth Estimation</a>
+      </div>
+      
+      <div class="paper-authors">Igor Pavlovic, Thiemo Wandel, Anton Obukhov, Luca Bartolomei 等</div>
+      
+      
+      <div class="paper-summary" data-zh="Monocular depth estimation is a ubiquitous yet highly ill-posed computer vision task, with downstream applications in scene reconstruction, computational photography, and robotics, among others. Despi" data-en="Monocular depth estimation is a ubiquitous yet highly ill-posed computer vision task, with downstream applications in scene reconstruction, computational photography, and robotics, among others. Despi">Monocular depth estimation is a ubiquitous yet highly ill-posed computer vision task, with downstream applications in scene reconstruction, computational photography, and robotics, among others. Despi</div>
+      
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2609.08084" target="_blank"><span data-zh="📄 阅读论文" data-en="📄 Read Paper">📄 阅读论文</span></a>
+        <a href="https://huggingface.co/papers/2609.08084" target="_blank"><span data-zh="🤗 HuggingFace 讨论" data-en="🤗 HF Discussion">🤗 HuggingFace 讨论</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+  
+
+  <!-- ── CRYPTO ────────────────────────────────────────────────────── -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-left">
+        <span class="section-icon">₿</span>
+        <span class="section-title" data-zh="加密货币市场" data-en="Crypto Market">加密货币市场</span>
+      </div>
+    </div>
+
+    
+    <div class="crypto-grid">
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">BTC</div>
+            <div class="crypto-name" data-zh="比特币" data-en="比特币">比特币</div>
+          </div>
+          <div class="crypto-change positive">
+            +1.75%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $78,649
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $1,579B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">ETH</div>
+            <div class="crypto-name" data-zh="以太坊" data-en="以太坊">以太坊</div>
+          </div>
+          <div class="crypto-change positive">
+            +6.67%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $2,604
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $318B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">SOL</div>
+            <div class="crypto-name" data-zh="索拉纳" data-en="索拉纳">索拉纳</div>
+          </div>
+          <div class="crypto-change positive">
+            +3.23%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $103.16
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $61B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">BNB</div>
+            <div class="crypto-name" data-zh="币安币" data-en="币安币">币安币</div>
+          </div>
+          <div class="crypto-change positive">
+            +3.29%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $732.21
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $97B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">XRP</div>
+            <div class="crypto-name" data-zh="XRP" data-en="XRP">XRP</div>
+          </div>
+          <div class="crypto-change positive">
+            +2.54%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $1.39
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $87B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">ADA</div>
+            <div class="crypto-name" data-zh="卡尔达诺" data-en="卡尔达诺">卡尔达诺</div>
+          </div>
+          <div class="crypto-change positive">
+            +0.12%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $0.2110
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $8B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">DOGE</div>
+            <div class="crypto-name" data-zh="狗狗币" data-en="狗狗币">狗狗币</div>
+          </div>
+          <div class="crypto-change positive">
+            +3.33%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $0.0864
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $13B</div>
+        
+      </div>
+      
+      <div class="crypto-card">
+        <div class="crypto-top">
+          <div>
+            <div class="crypto-symbol">AVAX</div>
+            <div class="crypto-name" data-zh="雪崩" data-en="雪崩">雪崩</div>
+          </div>
+          <div class="crypto-change positive">
+            +1.48%
+            <small>24h</small>
+          </div>
+        </div>
+        <div class="crypto-price">
+          $7.70
+          
+        </div>
+        
+        <div class="crypto-mcap"><span data-zh="市值" data-en="Mkt Cap">市值</span> $3B</div>
+        
+      </div>
+      
+    </div>
+    
+    <div style="text-align:right;font-size:12px;color:var(--subtle);margin-top:-6px;margin-bottom:8px;">
+      <span data-zh="实时数据 · 更新于" data-en="Live data · Updated">实时数据 · 更新于</span> 2026-09-11 15:06 UTC
+    </div>
+    
+    
+
+    
+    <div class="chart-wrap">
+      <p style="color:#888;font-size:12px;text-align:center;">[图表请在网站查看]</p>
+    </div>
+    
+
+    <div class="articles-list">
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://uploads.panewslab.com/5bee5808-d018-409d-9257-89c453c91b2b" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="PA News" data-en="PA News">PA News</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="江卓尔：全仓BTC空单虽做错方向，三项持仓合计仍盈利4.3%" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">江卓尔：全仓BTC空单虽做错方向，三项持仓合计仍盈利4.3%</div>
+        
+        <div class="article-summary" data-zh="PANews 9月11日消息，莱比特矿池创始人江卓尔在X平台发文，展示其“做错方向还能赚钱”的仓位组合。他此前表示 已在77,226美元卖出100%BTC仓位 。以8:29:47价格为参照，其全仓BTC空单从77,226美元到78,730.74美元亏损1.95%，全仓ETH现货从2,467.61美元到2,609.31美元盈利5.74%，5%仓位BNC现货从4.81美元到5.305美元盈利0.51%，三者合计盈利约4.3%。" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">PANews 9月11日消息，莱比特矿池创始人江卓尔在X平台发文，展示其“做错方向还能赚钱”的仓位组合。他此前表示 已在77,226美元卖出100%BTC仓位 。以8:29:47价格为参照，其全仓BTC空单从77,226美元到78,730.74美元亏损1.95%，全仓ETH现货从2,467.61美元到2,609.31美元盈利5.74%，5%仓位BNC现货从4.81美元到5.305美元盈利0.51%，三者合计盈利约4.3%。</div>
+        
+        <a href="https://www.panewslab.com/zh/articles/01a090f8-c692-77c1-b9f1-471ccc00e1d4" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://uploads.panewslab.com/5bee5808-d018-409d-9257-89c453c91b2b" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="PA News" data-en="PA News">PA News</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="Robinhood已上线INDEX代币，但疑似混淆了同名代币" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">Robinhood已上线INDEX代币，但疑似混淆了同名代币</div>
+        
+        <div class="article-summary" data-zh="PANews 9月11日消息，X平台用户GetRekt发文称，INDEX代币已被列入 Robinhood资产列 表，但开发者可能将其与另一同名代币“Index Cooperative（INDEX）”混淆。该用户指出，若将应用内图表与CoinGecko上 Index Cooperative 的图表对比，两者明显不同；Robinhood应用内图表与Robinhood Chain上 The Index（INDEX） 的走势完全一致，反映了近期历史新高和当前价格。" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">PANews 9月11日消息，X平台用户GetRekt发文称，INDEX代币已被列入 Robinhood资产列 表，但开发者可能将其与另一同名代币“Index Cooperative（INDEX）”混淆。该用户指出，若将应用内图表与CoinGecko上 Index Cooperative 的图表对比，两者明显不同；Robinhood应用内图表与Robinhood Chain上 The Index（INDEX） 的走势完全一致，反映了近期历史新高和当前价格。</div>
+        
+        <a href="https://www.panewslab.com/zh/articles/01a090ea-ca13-75b0-8afa-50957c2afdb4" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://uploads.panewslab.com/5bee5808-d018-409d-9257-89c453c91b2b" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="PA News" data-en="PA News">PA News</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="灰度：Zcash挖矿盈利能力明显高于比特币，算力年内增长超2.5倍" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">灰度：Zcash挖矿盈利能力明显高于比特币，算力年内增长超2.5倍</div>
+        
+        <div class="article-summary" data-zh="PANews 9月11日消息，灰度研究主管Zach Pandl发文指出，Zcash作为具备隐私功能的比特币类数字货币，其挖矿目前利润丰厚。虽然比特币网络矿工日奖励约3500万美元，远高于Zcash的约200万美元，但Zcash单台矿机日收益约为比特币的2倍，每兆瓦时收益约为比特币的4倍，甚至高于部分AI/高性能计算云服务。受代币价格强劲表现推动，Zcash全网挖矿活动今年已增长超2.5倍，形成“价格上涨—挖矿增加—网络安全增强—支撑价格”的良性循环。Pandl认为，按当前估值，Zcash挖矿仍具吸引力，并持续强化其网络安全。" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">PANews 9月11日消息，灰度研究主管Zach Pandl发文指出，Zcash作为具备隐私功能的比特币类数字货币，其挖矿目前利润丰厚。虽然比特币网络矿工日奖励约3500万美元，远高于Zcash的约200万美元，但Zcash单台矿机日收益约为比特币的2倍，每兆瓦时收益约为比特币的4倍，甚至高于部分AI/高性能计算云服务。受代币价格强劲表现推动，Zcash全网挖矿活动今年已增长超2.5倍，形成“价格上涨—挖矿增加—网络安全增强—支撑价格”的良性循环。Pandl认为，按当前估值，Zcash挖矿仍具吸引力，并持续强化其网络安全。</div>
+        
+        <a href="https://www.panewslab.com/zh/articles/01a090d8-ab3d-77cc-b0a5-e070160620a0" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://uploads.panewslab.com/5bee5808-d018-409d-9257-89c453c91b2b" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="PA News" data-en="PA News">PA News</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="Situational Awareness据称开始重新买入期权，标的包括SK海力士等" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">Situational Awareness据称开始重新买入期权，标的包括SK海力士等</div>
+        
+        <div class="article-summary" data-zh="PANews 9月11日消息，据新浪财经报道，CNBC的David Faber在直播节目中援引未具名消息人士称，AI对冲基金Situational Awareness在期权市场较为活跃。Faber表示，Leopold Aschenbrenner“在上周晚些时候和本周初重新开始买入期权，支付了数亿美元的期权费”涉及的标的包括他此前投资组合中常见的公司，例如SK海力士、闪迪、Advanced Micro、Bloom Energy和CoreWeave。Faber还表示，目前尚不清楚Aschenbrenner是否为公开市场投资募集了新的资金。" data-en="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.">PANews 9月11日消息，据新浪财经报道，CNBC的David Faber在直播节目中援引未具名消息人士称，AI对冲基金Situational Awareness在期权市场较为活跃。Faber表示，Leopold Aschenbrenner“在上周晚些时候和本周初重新开始买入期权，支付了数亿美元的期权费”涉及的标的包括他此前投资组合中常见的公司，例如SK海力士、闪迪、Advanced Micro、Bloom Energy和CoreWeave。Faber还表示，目前尚不清楚Aschenbrenner是否为公开市场投资募集了新的资金。</div>
+        
+        <a href="https://www.panewslab.com/zh/articles/01a090d3-dcb7-7552-a6df-7296f6d375cd" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    <div class="article-card">
+      
+      <div class="article-img-wrap">
+        <img src="https://cdn.sanity.io/images/s3y3vcno/production/6dfa527e7f18058c20f81771f1d1dc674ff71efc-1280x826.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+      
+      <div class="article-body">
+        <div class="article-meta">
+          <span class="badge badge-crypto" data-zh="CoinDesk" data-en="CoinDesk">CoinDesk</span>
+          <span class="article-date">Fri, 11 Sep 2026</span>
+        </div>
+        <div class="article-title" data-zh="Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." data-en="Metaplanet cuts executive reward pool by 41%, extinguishes $220 million in value">Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.</div>
+        
+        <a href="https://www.coindesk.com/business/2026/09/11/metaplanet-cuts-executive-reward-pool-by-41-extinguishes-usd220-million-in-value" class="read-more" target="_blank"><span data-zh="阅读原文 →" data-en="Read More →">阅读原文 →</span></a>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+
+</div>
+
+<!-- ── FOOTER ────────────────────────────────────────────────────────── -->
+<div class="footer">
+  <div class="footer-inner">
+    <div class="footer-title">
+      <span data-zh="每日全球要闻快报" data-en="Daily Global News Digest">每日全球要闻快报</span>
+      &nbsp;·&nbsp;
+      <span class="date-zh">2026年9月11日 星期五</span>
+      <span class="date-en" style="display:none">Friday, September 11, 2026</span>
+    </div>
+    <div class="footer-sources">
+      <span data-zh="数据来源：" data-en="Sources: ">数据来源：</span>Reuters · BBC · NY Times · The Guardian · MIT Tech Review · Ars Technica · PA News · CoinDesk · The Block · Blockworks · The Defiant · CoinGecko · yfinance
+    </div>
+    <div class="footer-disclaimer">
+      <span data-zh="本报告由自动化程序生成，仅供参考，不构成投资建议。" data-en="Auto-generated for informational purposes only. Not investment advice.">本报告由自动化程序生成，仅供参考，不构成投资建议。</span>
+    </div>
+  </div>
+</div>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[data-zh]').forEach(function(el) {
+    el.innerHTML = lang==='en' ? (el.getAttribute('data-en')||el.getAttribute('data-zh')) : el.getAttribute('data-zh');
+  });
+  document.querySelectorAll('.date-zh').forEach(function(el){ el.style.display=lang==='en'?'none':''; });
+  document.querySelectorAll('.date-en').forEach(function(el){ el.style.display=lang==='en'?'':'none'; });
+  document.getElementById('btn-zh').classList.toggle('active', lang==='zh');
+  document.getElementById('btn-en').classList.toggle('active', lang==='en');
+  try { localStorage.setItem('news_lang', lang); } catch(e){}
+}
+(function(){ try{ var s=localStorage.getItem('news_lang'); if(s==='en') setLang('en'); }catch(e){} })();
+</script>
+</body>
+</html>
